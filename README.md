@@ -14,9 +14,9 @@ https://github.com/thivyasree1701/COS30045_Data-Visualisation-Project
 Open this folder in VS Code and use Live Server on `index.html`. Use an HTTP server rather than opening the file directly, because JavaScript modules and CSV loading require it. No npm install/build is needed. The pinned D3 CDN requires internet; for Mercury, an appropriately attributed local D3 copy can replace it later.
 
 ## Team responsibilities
-- Person 1: `national-trend.js`, `state-comparison.js`, and corresponding KNIME exports.
-- Person 2: `road-user-comparison.js`, `road-user-shares.js`, and corresponding exports.
-- Person 3: `age-sex-comparison.js` and integration, supported by all members.
+- Cheong En Ying : `national-trend.js`, `state-comparison.js`, and corresponding KNIME exports.
+- Thivyasree : `road-user-comparison.js`, `road-user-shares.js`, and corresponding exports.
+- Janani : `age-sex-comparison.js` and integration, supported by all members.
 - Everyone: design, accessible interactions, validation, usability testing and Design Book.
 
 ## Data
