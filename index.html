@@ -1,5 +1,49 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Road Injury Hospitalisations in Australia student dashboard starter for hospitalised road injuries in Australia, 2011–2021."><title>Road Injury Hospitalisations in Australia | Australia Overview</title><link rel="stylesheet" href="css/styles.css"></head>
-<body><a class="skip" href="#main">Skip to content</a><header><h1>Road Injury Hospitalisations in Australia</h1><p>Hospitalised road injuries in Australia · 2011–2021</p><nav aria-label="Main navigation"><a href="index.html" aria-current="page">Australia Overview</a><a href="road-users.html" >Road Users</a></nav></header>
-<main id="main"><h2>Australia Overview</h2><p>Explore injury trends and differences between states, age groups and sexes.</p><p class="notice">Starter layout: charts and data loading are not implemented yet. No sample injury figures are displayed.</p><div class="toolbar"><label for="overview-year">Comparison year</label><select id="overview-year"></select><button type="button" data-reset-year>Reset year</button></div><p>The year selection will update Charts 2 and 4 when implemented.</p><section class="panel" aria-labelledby="national-trend-title"><h3 id="national-trend-title">Chart 1: National trend</h3><p>Line chart showing all years, 2011–2021.</p><div id="national-trend" class="placeholder">D3 chart to be built by the assigned team member.</div><details><summary>Data table plan</summary><p>The final chart will include an accessible table of its underlying data.</p></details></section><div class="grid"><section class="panel" aria-labelledby="state-comparison-title"><h3 id="state-comparison-title">Chart 2: State comparison</h3><p>Horizontal bars. Year: <span data-selected-year>2021</span>.</p><div id="state-comparison" class="placeholder">D3 chart to be built by the assigned team member.</div><details><summary>Data table plan</summary><p>The final chart will include an accessible table of its underlying data.</p></details></section><section class="panel" aria-labelledby="age-sex-comparison-title"><h3 id="age-sex-comparison-title">Chart 4: Age and sex</h3><p>Grouped bars with age groups in order. Year: <span data-selected-year>2021</span>.</p><div id="age-sex-comparison" class="placeholder">D3 chart to be built by the assigned team member.</div><details><summary>Data table plan</summary><p>The final chart will include an accessible table of its underlying data.</p></details></section></div><section class="panel"><h2>Findings and limitations</h2><p>Add verified findings after checking the processed data. Counts show recorded hospital burden, not population-adjusted risk. Document recording changes and omitted categories.</p></section></main>
-<footer><p>Source: <a href="https://www.bitre.gov.au/resource/road-safety/hospitalised-injury">BITRE Hospitalised Injury</a>. National and state/territory workbooks, 2011–2021.</p><p>Student project · Add team names, methodology, APA 7 references and acknowledgements before submission.</p></footer><noscript>This dashboard requires JavaScript for its charts and year controls.</noscript><script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script type="module" src="js/overview.js"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Design preview for Australia's hospitalised road injury dashboard.">
+  <title>Road injury explorer · Australia</title>
+  <link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/comparison.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to dashboard</a>
+  <aside class="sidebar" aria-label="Dashboard filters">
+    <a class="brand" href="index.html"><span class="brand-icon" aria-label="Group 4">4</span><span>ROAD INJURY<br><strong>EXPLORER</strong></span></a>
+    <div class="sidebar-intro"><span class="eyebrow">AUSTRALIA · 2011–2021</span><p>A clearer view of<br>our roads.</p></div>
+    <div class="filter-heading">Explore the data <span aria-hidden="true">↓</span></div>
+    <label class="filter-label" for="year">Comparison year</label>
+    <select id="year" aria-describedby="filter-note"></select>
+    <input id="year-range" type="range" min="2011" max="2021" value="2021" aria-label="Comparison year slider">
+    <div class="range-labels"><span>2011</span><span>2021</span></div>
+    <label class="filter-label" for="road-user">Road user</label>
+    <select id="road-user"><option value="all">All road users</option><option>Car occupant</option><option>Motorcyclist</option><option>Pedal cyclist</option><option>Pedestrian</option></select>
+    <fieldset><legend class="filter-label">Sex</legend><div class="segments" id="sex"><button type="button" aria-pressed="true">All</button><button type="button" aria-pressed="false">Male</button><button type="button" aria-pressed="false">Female</button></div></fieldset>
+    <p class="filter-note" id="filter-note">Design preview: year and sex selections demonstrate controls. Chart shapes are illustrative, not filtered injury data. Road-user selection highlights a group.</p>
+    <button type="button" class="reset" id="reset">↺ <span>Reset filters</span></button>
+    <div class="sidebar-bottom"><span class="source-dot"></span> A student data visualisation project<br><span>Planned source: BITRE / AIHW</span></div>
+  </aside>
+  <main id="main">
+    <header class="page-header"><div><span class="eyebrow">THE NATIONAL PICTURE</span><h1>Every journey matters.</h1><p>Explore hospitalised road injuries across Australia.</p></div></header>
+    <div class="context-bar"><nav class="page-nav" aria-label="Dashboard pages"><a href="index.html" aria-current="page">Overview</a><a href="age-sex.html">People</a><a href="states.html">Location</a></nav><span class="context-year">Comparison year <strong data-year>2021</strong></span></div>
+    <section class="metrics" aria-label="Planned summary measures">
+      <article><span class="metric-label">Hospitalisations <span data-year>2021</span></span><strong>—<small>cases</small></strong><span class="metric-note">Awaiting verified KNIME export</span></article>
+      <article><span class="metric-label">Change since 2011</span><strong>—<small>%</small></strong><span class="metric-note">Compare the first and final year</span></article>
+      <article><span class="metric-label">Highest annual count</span><strong>—<small>year</small></strong><span class="metric-note">To be calculated from the data</span></article>
+      <article class="metric-feature"><span class="metric-label">Years in focus</span><strong>11<small>years</small></strong><span class="metric-note">2011 through 2021</span></article>
+    </section>
+    <div class="charts">
+      <section class="chart-card trend-card" aria-labelledby="trend-title"><div class="card-header"><div><span class="chart-number">01 / THE BIG PICTURE</span><h2 id="trend-title">National injuries over time</h2><p>Annual hospitalisations · select a year on the line</p></div><span class="chart-tag">Line</span></div><div class="plot" id="trend"></div><div class="card-footer"><span>Illustrative shape · counts pending</span><button type="button" data-info="trend">Chart details ↗</button></div></section>
+      <section class="chart-card" aria-labelledby="donut-title"><div class="card-header"><div><span class="chart-number">02 / WHO IS AFFECTED</span><h2 id="donut-title">Road-user shares</h2><p>Composition of hospitalisations · <span data-year>2021</span></p></div><span class="chart-tag">Donut</span></div><div class="plot" id="donut"></div><div class="card-footer"><span>Illustrative categories & proportions</span><button type="button" data-info="donut">Chart details ↗</button></div></section>
+      <section class="chart-card" aria-labelledby="stack-title"><div class="card-header"><div><span class="chart-number">03 / A CHANGING MIX</span><h2 id="stack-title">Road-user shares over time</h2><p>Each year's total represents 100% of hospitalisations</p></div><span class="chart-tag">Stacked bars</span></div><div class="plot" id="stack"></div><div class="card-footer"><span>Illustrative proportions · 2011–2021</span><button type="button" data-info="stack">Chart details ↗</button></div></section>
+      <section class="chart-card" aria-labelledby="bubble-title"><div class="card-header"><div><span class="chart-number">04 / HOSPITAL BURDEN</span><h2 id="bubble-title">Hospitalisations & bed days</h2><p>Compare road-user groups · <span data-year>2021</span></p></div><span class="chart-tag">Bubble</span></div><div class="plot" id="bubble"></div><div class="card-footer"><span>Illustrative positions · size measure undecided</span><button type="button" data-info="bubble">Chart details ↗</button></div></section>
+    </div>
+    <footer><span id="status" role="status">Preview only · no injury statistics are displayed.</span><a href="https://www.bitre.gov.au/resource/road-safety/hospitalised-injury" target="_blank" rel="noopener">Data source ↗</a></footer>
+  </main>
+  <dialog id="details"><button type="button" id="close-dialog" aria-label="Close details">×</button><span class="eyebrow">DESIGN & DATA NOTES</span><h2 id="detail-title">About this preview</h2><p id="detail-text"></p><p>The interface uses the selected blue and cream palette. Chart categories use complementary blue, orange, teal and purple. Dark text, outlines and labels support readability. Final charts need verified CSVs, accessible data tables and validated interactions.</p></dialog>
+  <noscript>JavaScript is required for this design preview. Summary values await verified data.</noscript>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script src="js/dashboard.js" defer></script>
+<script src="js/interactions.js" defer></script></body>
+</html>

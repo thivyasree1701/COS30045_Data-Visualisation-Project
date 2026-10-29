@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Design preview for Australia's hospitalised road injury dashboard.">
+  <title>Behind the hospital numbers. · Group 4 Road Injury Explorer</title>
+  <link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/comparison.css">
+</head>
+<body data-page="age-sex">
+  <a class="skip" href="#main">Skip to dashboard</a>
+  <aside class="sidebar" aria-label="Dashboard filters">
+    <a class="brand" href="index.html"><span class="brand-icon" aria-label="Group 4">4</span><span>ROAD INJURY<br><strong>EXPLORER</strong></span></a>
+    <div class="sidebar-intro"><span class="eyebrow">AUSTRALIA · 2011–2021</span><p>A clearer view of<br>our roads.</p></div>
+    <div class="filter-heading">Explore the data <span aria-hidden="true">↓</span></div>
+    <label class="filter-label" for="year">Comparison year</label>
+    <select id="year" aria-describedby="filter-note"></select>
+    <input id="year-range" type="range" min="2011" max="2021" value="2021" aria-label="Comparison year slider">
+    <div class="range-labels"><span>2011</span><span>2021</span></div>
+    <fieldset><legend class="filter-label">Sex</legend><div class="segments" id="sex"><button type="button" aria-pressed="true">All</button><button type="button" aria-pressed="false">Male</button><button type="button" aria-pressed="false">Female</button></div></fieldset>
+    <p class="filter-note" id="filter-note">Design preview: selections show the planned interaction. Real hospitalisation counts will be added after validating the KNIME export.</p>
+    <button type="button" class="reset" id="reset">↺ <span>Reset filters</span></button>
+    <div class="sidebar-bottom"><span class="source-dot"></span> A student data visualisation project<br><span>Planned source: BITRE / AIHW</span></div>
+  </aside>
+  <main id="main">
+    <header class="page-header"><div><span class="eyebrow">A CLOSER LOOK AT PEOPLE</span><h1>Behind the hospital numbers.</h1><p>Explore road users, age groups and the burden on hospitals.</p></div></header>
+    <div class="context-bar"><nav class="page-nav" aria-label="Dashboard pages"><a href="index.html">Overview</a><a href="age-sex.html" aria-current="page">People</a><a href="states.html">Location</a></nav><span class="context-year">Comparison year <strong data-year>2021</strong></span></div>
+<div class="page-notice"><p><strong>Who is represented?</strong> Illustrative charts only · sex selection highlights the age-and-sex bars.</p></div><div class="comparison-layout people-layout"><section class="chart-card"><div class="card-header"><div><h2>Hospitalisations vs bed days</h2><p>Illustrative · bubble-size measure to be confirmed</p></div></div><div class="mini-plot" id="people-bubble"></div></section><section class="chart-card"><div class="card-header"><div><h2>Age and sex comparison</h2><p>Illustrative · male: blue/left · female: orange/right</p></div></div><div class="age-plot" id="age-chart"></div><span id="selected-sex" hidden>All</span><div class="card-footer"><span>Illustrative bar heights</span><button type="button" id="show-age-table">View table layout ↗</button></div></section><section class="chart-card"><div class="card-header"><div><h2>Road user by age group</h2><p>Illustrative colour intensity · real counts pending</p></div></div><div class="mini-plot" id="people-heatmap"></div><div class="card-footer"><span>Blue intensity: lower → higher example value</span></div></section></div>
+    <footer><span id="status" role="status">Preview only · no injury statistics are displayed.</span><a href="https://www.bitre.gov.au/resource/road-safety/hospitalised-injury" target="_blank" rel="noopener">Data source ↗</a></footer>
+  </main>
+  <dialog id="details"><button type="button" id="close-dialog" aria-label="Close details">×</button><span class="eyebrow">DESIGN & DATA NOTES</span><h2 id="detail-title">About this preview</h2><p id="detail-text"></p><p>The interface uses the selected blue and cream palette. Chart categories use complementary blue, orange, teal and purple. Dark text, outlines and labels support readability. Final charts need verified CSVs, accessible data tables and validated interactions.</p></dialog>
+  <noscript>JavaScript is required for this design preview. Summary values await verified data.</noscript>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script src="js/comparison-pages.js" defer></script>
+<script src="js/extra-previews.js" defer></script><script src="js/interactions.js" defer></script></body>
+</html>
