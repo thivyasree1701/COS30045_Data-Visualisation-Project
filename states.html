@@ -6,7 +6,7 @@
   <meta name="description" content="Design preview for Australia's hospitalised road injury dashboard.">
   <title>Across Australia. · Group 4 Road Injury Explorer</title>
   <link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/comparison.css">
-</head>
+<link rel="stylesheet" href="css/real-data.css"></head>
 <body data-page="states">
   <a class="skip" href="#main">Skip to dashboard</a>
   <aside class="sidebar" aria-label="Dashboard filters">
@@ -20,19 +20,19 @@
     <label class="filter-label" for="state">State or territory</label>
     <select id="state"><option value="all">All jurisdictions</option><option value="NSW">New South Wales</option><option value="VIC">Victoria</option><option value="QLD">Queensland</option><option value="WA">Western Australia</option><option value="SA">South Australia</option><option value="TAS">Tasmania</option><option value="ACT">Australian Capital Territory</option><option value="NT">Northern Territory</option></select>
     <p class="scope-note">State data supports year and jurisdiction comparisons. Sex and road-user filters are not applied to this page.</p>
-    <p class="filter-note" id="filter-note">Design preview: selections show the planned interaction. Real hospitalisation counts will be added after validating the KNIME export.</p>
+    <p class="filter-note" id="filter-note">Choose a year to compare eight jurisdictions. Counts show hospital burden, not population-adjusted risk.</p>
     <button type="button" class="reset" id="reset">↺ <span>Reset filters</span></button>
-    <div class="sidebar-bottom"><span class="source-dot"></span> A student data visualisation project<br><span>Planned source: BITRE / AIHW</span></div>
+    <div class="sidebar-bottom"><span class="source-dot"></span> A student data visualisation project<br><span>Source: BITRE / AIHW</span></div>
   </aside>
   <main id="main">
     <header class="page-header"><div><span class="eyebrow">A GEOGRAPHIC VIEW</span><h1>Across Australia.</h1><p>Compare hospitalisations across states and territories.</p></div></header>
     <div class="context-bar"><nav class="page-nav" aria-label="Dashboard pages"><a href="index.html">Overview</a><a href="age-sex.html">People</a><a href="states.html" aria-current="page">Location</a></nav><span class="context-year">Comparison year <strong data-year>2021</strong></span></div>
-<div class="page-notice"><span class="notice-icon">i</span><p><strong>Real boundaries. Preview layout.</strong> The map uses your local ABS 2021 boundary file. Hospitalisation counts are not connected.</p></div><div class="comparison-layout location-layout"><section class="chart-card map-card"><div class="card-header"><div><h2>Where hospitalisations occur</h2><p>States and territories · <span data-year>2021</span></p></div></div><div class="map-plot" id="state-map"><p>Loading Australian boundaries…</p></div><div class="map-key"><span class="map-swatch"></span><span>Jurisdiction boundary · colour does not represent a count yet</span></div><div class="card-footer"><span>Simplified ABS boundaries · GDA2020</span><button type="button" data-info="map">Map notes ↗</button></div></section><section class="chart-card"><div class="card-header"><div><h2>First Nations by remoteness</h2><p>Layout placeholder · source breakdown unverified</p></div></div><div class="mini-plot" id="remoteness-donut"></div><div class="remoteness-list"><span>Major cities</span><span>Inner regional</span><span>Outer regional</span><span>Remote</span><span>Very remote</span></div><p class="method-note">Proposed categories only. Confirm the workbook supports this breakdown before implementation.</p><div class="card-footer"><span>Segments are placeholders, not shares.</span></div></section></div><span id="selected-state" hidden></span><span id="state-detail" hidden></span>
+<div class="page-notice"><span class="notice-icon">i</span><p><strong>Real state data.</strong> The map uses your local ABS 2021 boundary file. Colour shows hospitalisation counts; click a state to highlight it.</p></div><div class="comparison-layout location-layout"><section class="chart-card map-card"><div class="card-header"><div><h2>Hospitalisations by state and territory</h2><p>States and territories · <span data-year>2021</span></p></div></div><div class="map-plot" id="state-map"><p>Loading Australian boundaries…</p></div><div class="map-key"><span class="map-swatch"></span><span>Lighter → darker: fewer → more hospitalisations</span></div><div class="card-footer"><span>Simplified ABS boundaries · GDA2020</span><button type="button" data-info="map">Map notes ↗</button></div></section><section class="chart-card"><div class="card-header"><div><h2>First Nations by remoteness</h2><p>National First Nations hospitalisations · <span data-year>2021</span></p></div></div><div class="mini-plot" id="remoteness-donut"></div><div class="remoteness-list"><span>Major cities</span><span>Inner regional</span><span>Outer regional</span><span>Remote</span><span>Very remote</span></div><p class="method-note">Shares include Major Cities, Regional and Remote. State selection applies to the map only; this donut stays national.</p><div class="card-footer"><span>BITRE / AIHW · known remoteness only</span></div></section></div><span id="selected-state" hidden></span><span id="state-detail" hidden></span>
     <footer><span id="status" role="status">Preview only · no injury statistics are displayed.</span><a href="https://www.bitre.gov.au/resource/road-safety/hospitalised-injury" target="_blank" rel="noopener">Data source ↗</a></footer>
   </main>
   <dialog id="details"><button type="button" id="close-dialog" aria-label="Close details">×</button><span class="eyebrow">DESIGN & DATA NOTES</span><h2 id="detail-title">About this preview</h2><p id="detail-text"></p><p>The interface uses the selected blue and cream palette. Chart categories use complementary blue, orange, teal and purple. Dark text, outlines and labels support readability. Final charts need verified CSVs, accessible data tables and validated interactions.</p></dialog>
   <noscript>JavaScript is required for this design preview. Summary values await verified data.</noscript>
   <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
-  <script src="js/comparison-pages.js" defer></script>
-<script src="js/extra-previews.js" defer></script><script src="js/interactions.js" defer></script></body>
+  <script src="js/state-data.js" defer></script>
+<script src="js/interactions.js" defer></script></body>
 </html>

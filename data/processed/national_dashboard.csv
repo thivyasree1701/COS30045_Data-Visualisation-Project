@@ -1,0 +1,430 @@
+"Year","Hospitalisations","Data_type","Road_user","Year_total","Percentage","Age group","Sex","Age order","0-7","17-25","26-39","40-64","65-74","75++","8-16"
+2011,34033,"national_trend",,,,,,,,,,,,,
+2012,34024,"national_trend",,,,,,,,,,,,,
+2013,35001,"national_trend",,,,,,,,,,,,,
+2014,35515,"national_trend",,,,,,,,,,,,,
+2015,37082,"national_trend",,,,,,,,,,,,,
+2016,38963,"national_trend",,,,,,,,,,,,,
+2017,39339,"national_trend",,,,,,,,,,,,,
+2018,39590,"national_trend",,,,,,,,,,,,,
+2019,39866,"national_trend",,,,,,,,,,,,,
+2020,37966,"national_trend",,,,,,,,,,,,,
+2021,39505,"national_trend",,,,,,,,,,,,,
+2011,214,"road_user_shares","Bus occupant",34033,0.6288014574089854,,,,,,,,,,
+2011,10948,"road_user_shares","Car driver",34033,32.168777363147534,,,,,,,,,,
+2011,4853,"road_user_shares","Car passenger",34033,14.259689125260776,,,,,,,,,,
+2011,889,"road_user_shares","Car unknown position",34033,2.612170540357888,,,,,,,,,,
+2011,455,"road_user_shares","Heavy transport driver",34033,1.3369376781359268,,,,,,,,,,
+2011,52,"road_user_shares","Heavy transport passenger",34033,0.15279287750124879,,,,,,,,,,
+2011,55,"road_user_shares","Heavy transport unknown position",34033,0.16160785120324392,,,,,,,,,,
+2011,7565,"road_user_shares","Motorcyclist",34033,22.228425351864367,,,,,,,,,,
+2011,610,"road_user_shares","Other or unknown",34033,1.7923779860723414,,,,,,,,,,
+2011,5391,"road_user_shares","Pedal cyclist",34033,15.840507742485235,,,,,,,,,,
+2011,2754,"road_user_shares","Pedestrian",34033,8.092145858431522,,,,,,,,,,
+2011,247,"road_user_shares","Pick-up truck or van occupant",34033,0.7257661681309318,,,,,,,,,,
+2012,217,"road_user_shares","Bus occupant",34024,0.6377850928756172,,,,,,,,,,
+2012,10806,"road_user_shares","Car driver",34024,31.759934164119446,,,,,,,,,,
+2012,4738,"road_user_shares","Car passenger",34024,13.925464378086057,,,,,,,,,,
+2012,895,"road_user_shares","Car unknown position",34024,2.6304961203856103,,,,,,,,,,
+2012,416,"road_user_shares","Heavy transport driver",34024,1.2226663531624735,,,,,,,,,,
+2012,47,"road_user_shares","Heavy transport passenger",34024,0.1381377850928756,,,,,,,,,,
+2012,48,"road_user_shares","Heavy transport unknown position",34024,0.14107688690336234,,,,,,,,,,
+2012,7728,"road_user_shares","Motorcyclist",34024,22.713378791441336,,,,,,,,,,
+2012,563,"road_user_shares","Other or unknown",34024,1.6547143193040208,,,,,,,,,,
+2012,5621,"road_user_shares","Pedal cyclist",34024,16.520691276745826,,,,,,,,,,
+2012,2672,"road_user_shares","Pedestrian",34024,7.853280037620503,,,,,,,,,,
+2012,273,"road_user_shares","Pick-up truck or van occupant",34024,0.8023747942628733,,,,,,,,,,
+2013,226,"road_user_shares","Bus occupant",35001,0.6456958372617925,,,,,,,,,,
+2013,10942,"road_user_shares","Car driver",35001,31.261963943887316,,,,,,,,,,
+2013,4828,"road_user_shares","Car passenger",35001,13.793891603097054,,,,,,,,,,
+2013,818,"road_user_shares","Car unknown position",35001,2.3370760835404703,,,,,,,,,,
+2013,415,"road_user_shares","Heavy transport driver",35001,1.1856804091311677,,,,,,,,,,
+2013,40,"road_user_shares","Heavy transport passenger",35001,0.11428244907288364,,,,,,,,,,
+2013,29,"road_user_shares","Heavy transport unknown position",35001,0.08285477557784063,,,,,,,,,,
+2013,8018,"road_user_shares","Motorcyclist",35001,22.907916916659524,,,,,,,,,,
+2013,536,"road_user_shares","Other or unknown",35001,1.5313848175766407,,,,,,,,,,
+2013,6262,"road_user_shares","Pedal cyclist",35001,17.890917402359932,,,,,,,,,,
+2013,2657,"road_user_shares","Pedestrian",35001,7.591211679666295,,,,,,,,,,
+2013,230,"road_user_shares","Pick-up truck or van occupant",35001,0.6571240821690809,,,,,,,,,,
+2014,289,"road_user_shares","Bus occupant",35515,0.8137406729550895,,,,,,,,,,
+2014,11122,"road_user_shares","Car driver",35515,31.31634520625088,,,,,,,,,,
+2014,4625,"road_user_shares","Car passenger",35515,13.022666478952555,,,,,,,,,,
+2014,728,"road_user_shares","Car unknown position",35515,2.0498380965789105,,,,,,,,,,
+2014,377,"road_user_shares","Heavy transport driver",35515,1.0615233000140785,,,,,,,,,,
+2014,55,"road_user_shares","Heavy transport passenger",35515,0.15486414191186823,,,,,,,,,,
+2014,48,"road_user_shares","Heavy transport unknown position",35515,0.1351541602139941,,,,,,,,,,
+2014,8334,"road_user_shares","Motorcyclist",35515,23.466141067154723,,,,,,,,,,
+2014,508,"road_user_shares","Other or unknown",35515,1.4303815289314374,,,,,,,,,,
+2014,6636,"road_user_shares","Pedal cyclist",35515,18.685062649584683,,,,,,,,,,
+2014,2554,"road_user_shares","Pedestrian",35515,7.191327608052935,,,,,,,,,,
+2014,239,"road_user_shares","Pick-up truck or van occupant",35515,0.6729550893988455,,,,,,,,,,
+2015,246,"road_user_shares","Bus occupant",37082,0.6633946389083653,,,,,,,,,,
+2015,12163,"road_user_shares","Car driver",37082,32.80028045952214,,,,,,,,,,
+2015,4958,"road_user_shares","Car passenger",37082,13.370368372795426,,,,,,,,,,
+2015,812,"road_user_shares","Car unknown position",37082,2.18974165363249,,,,,,,,,,
+2015,444,"road_user_shares","Heavy transport driver",37082,1.1973464214443665,,,,,,,,,,
+2015,43,"road_user_shares","Heavy transport passenger",37082,0.11595922550024271,,,,,,,,,,
+2015,23,"road_user_shares","Heavy transport unknown position",37082,0.06202470201175773,,,,,,,,,,
+2015,8298,"road_user_shares","Motorcyclist",37082,22.37743379537242,,,,,,,,,,
+2015,503,"road_user_shares","Other or unknown",37082,1.3564532657353972,,,,,,,,,,
+2015,6716,"road_user_shares","Pedal cyclist",37082,18.111212987433255,,,,,,,,,,
+2015,2627,"road_user_shares","Pedestrian",37082,7.084299660212502,,,,,,,,,,
+2015,249,"road_user_shares","Pick-up truck or van occupant",37082,0.671484817431638,,,,,,,,,,
+2016,283,"road_user_shares","Bus occupant",38963,0.7263301080512281,,,,,,,,,,
+2016,13194,"road_user_shares","Car driver",38963,33.86289556758977,,,,,,,,,,
+2016,5103,"road_user_shares","Car passenger",38963,13.097040782280626,,,,,,,,,,
+2016,808,"road_user_shares","Car unknown position",38963,2.073762287298206,,,,,,,,,,
+2016,403,"road_user_shares","Heavy transport driver",38963,1.034314606164823,,,,,,,,,,
+2016,42,"road_user_shares","Heavy transport passenger",38963,0.10779457433975823,,,,,,,,,,
+2016,39,"road_user_shares","Heavy transport unknown position",38963,0.10009496188691835,,,,,,,,,,
+2016,8526,"road_user_shares","Motorcyclist",38963,21.882298590970922,,,,,,,,,,
+2016,620,"road_user_shares","Other or unknown",38963,1.591253240253574,,,,,,,,,,
+2016,6904,"road_user_shares","Pedal cyclist",38963,17.71937479146883,,,,,,,,,,
+2016,2743,"road_user_shares","Pedestrian",38963,7.040012319379924,,,,,,,,,,
+2016,298,"road_user_shares","Pick-up truck or van occupant",38963,0.7648281703154275,,,,,,,,,,
+2017,265,"road_user_shares","Bus occupant",39339,0.673631764915224,,,,,,,,,,
+2017,13267,"road_user_shares","Car driver",39339,33.72480235898218,,,,,,,,,,
+2017,5102,"road_user_shares","Car passenger",39339,12.969317979613107,,,,,,,,,,
+2017,777,"road_user_shares","Car unknown position",39339,1.975139174864638,,,,,,,,,,
+2017,447,"road_user_shares","Heavy transport driver",39339,1.1362769770456798,,,,,,,,,,
+2017,49,"road_user_shares","Heavy transport passenger",39339,0.12455832634281502,,,,,,,,,,
+2017,32,"road_user_shares","Heavy transport unknown position",39339,0.08134421312183839,,,,,,,,,,
+2017,8739,"road_user_shares","Motorcyclist",39339,22.21459620224205,,,,,,,,,,
+2017,600,"road_user_shares","Other or unknown",39339,1.5252039960344697,,,,,,,,,,
+2017,7076,"road_user_shares","Pedal cyclist",39339,17.98723912656651,,,,,,,,,,
+2017,2714,"road_user_shares","Pedestrian",39339,6.899006075395918,,,,,,,,,,
+2017,271,"road_user_shares","Pick-up truck or van occupant",39339,0.6888838048755688,,,,,,,,,,
+2018,247,"road_user_shares","Bus occupant",39590,0.6238949229603435,,,,,,,,,,
+2018,13595,"road_user_shares","Car driver",39590,34.33947966658247,,,,,,,,,,
+2018,5206,"road_user_shares","Car passenger",39590,13.14978529931801,,,,,,,,,,
+2018,864,"road_user_shares","Car unknown position",39590,2.1823692851730234,,,,,,,,,,
+2018,437,"road_user_shares","Heavy transport driver",39590,1.1038140944683001,,,,,,,,,,
+2018,69,"road_user_shares","Heavy transport passenger",39590,0.17428643596867896,,,,,,,,,,
+2018,47,"road_user_shares","Heavy transport unknown position",39590,0.1187168476888103,,,,,,,,,,
+2018,8623,"road_user_shares","Motorcyclist",39590,21.780752715332156,,,,,,,,,,
+2018,603,"road_user_shares","Other or unknown",39590,1.5231118969436725,,,,,,,,,,
+2018,6959,"road_user_shares","Pedal cyclist",39590,17.577671129073,,,,,,,,,,
+2018,2661,"road_user_shares","Pedestrian",39590,6.72139429148775,,,,,,,,,,
+2018,279,"road_user_shares","Pick-up truck or van occupant",39590,0.7047234150037889,,,,,,,,,,
+2019,255,"road_user_shares","Bus occupant",39866,0.639642803391361,,,,,,,,,,
+2019,13482,"road_user_shares","Car driver",39866,33.818291275773845,,,,,,,,,,
+2019,4989,"road_user_shares","Car passenger",39866,12.514423318115687,,,,,,,,,,
+2019,797,"road_user_shares","Car unknown position",39866,1.9991973109918226,,,,,,,,,,
+2019,425,"road_user_shares","Heavy transport driver",39866,1.0660713389856018,,,,,,,,,,
+2019,52,"road_user_shares","Heavy transport passenger",39866,0.13043696382882658,,,,,,,,,,
+2019,47,"road_user_shares","Heavy transport unknown position",39866,0.11789494807605479,,,,,,,,,,
+2019,8924,"road_user_shares","Motorcyclist",39866,22.384989715547082,,,,,,,,,,
+2019,620,"road_user_shares","Other or unknown",39866,1.5552099533437014,,,,,,,,,,
+2019,7302,"road_user_shares","Pedal cyclist",39866,18.316359805347915,,,,,,,,,,
+2019,2713,"road_user_shares","Pedestrian",39866,6.805297747453971,,,,,,,,,,
+2019,260,"road_user_shares","Pick-up truck or van occupant",39866,0.6521848191441328,,,,,,,,,,
+2020,173,"road_user_shares","Bus occupant",37966,0.4556708634040984,,,,,,,,,,
+2020,12217,"road_user_shares","Car driver",37966,32.17879155033451,,,,,,,,,,
+2020,4344,"road_user_shares","Car passenger",37966,11.441816362008112,,,,,,,,,,
+2020,731,"road_user_shares","Car unknown position",37966,1.9254069430543117,,,,,,,,,,
+2020,412,"road_user_shares","Heavy transport driver",37966,1.0851814781646736,,,,,,,,,,
+2020,48,"road_user_shares","Heavy transport passenger",37966,0.1264289100774377,,,,,,,,,,
+2020,40,"road_user_shares","Heavy transport unknown position",37966,0.10535742506453143,,,,,,,,,,
+2020,8684,"road_user_shares","Motorcyclist",37966,22.87309698150977,,,,,,,,,,
+2020,582,"road_user_shares","Other or unknown",37966,1.5329505346889323,,,,,,,,,,
+2020,8332,"road_user_shares","Pedal cyclist",37966,21.945951640941896,,,,,,,,,,
+2020,2103,"road_user_shares","Pedestrian",37966,5.539166622767739,,,,,,,,,,
+2020,300,"road_user_shares","Pick-up truck or van occupant",37966,0.7901806879839857,,,,,,,,,,
+2021,169,"road_user_shares","Bus occupant",39505,0.42779395013289456,,,,,,,,,,
+2021,13327,"road_user_shares","Car driver",39505,33.7349702569295,,,,,,,,,,
+2021,4495,"road_user_shares","Car passenger",39505,11.37830654347551,,,,,,,,,,
+2021,717,"road_user_shares","Car unknown position",39505,1.8149601316289077,,,,,,,,,,
+2021,383,"road_user_shares","Heavy transport driver",39505,0.96949753195798,,,,,,,,,,
+2021,56,"road_user_shares","Heavy transport passenger",39505,0.14175420832805974,,,,,,,,,,
+2021,36,"road_user_shares","Heavy transport unknown position",39505,0.09112770535375268,,,,,,,,,,
+2021,8883,"road_user_shares","Motorcyclist",39505,22.485761296038476,,,,,,,,,,
+2021,601,"road_user_shares","Other or unknown",39505,1.5213264143779268,,,,,,,,,,
+2021,8163,"road_user_shares","Pedal cyclist",39505,20.663207188963423,,,,,,,,,,
+2021,2334,"road_user_shares","Pedestrian",39505,5.908112897101633,,,,,,,,,,
+2021,341,"road_user_shares","Pick-up truck or van occupant",39505,0.8631818757119352,,,,,,,,,,
+2011,278,"age_sex",,,,"0-7","Female",1,,,,,,,
+2011,441,"age_sex",,,,"0-7","Male",1,,,,,,,
+2011,2616,"age_sex",,,,"17-25","Female",3,,,,,,,
+2011,5478,"age_sex",,,,"17-25","Male",3,,,,,,,
+2011,2501,"age_sex",,,,"26-39","Female",4,,,,,,,
+2011,5665,"age_sex",,,,"26-39","Male",4,,,,,,,
+2011,3638,"age_sex",,,,"40-64","Female",5,,,,,,,
+2011,7022,"age_sex",,,,"40-64","Male",5,,,,,,,
+2011,899,"age_sex",,,,"65-74","Female",6,,,,,,,
+2011,1069,"age_sex",,,,"65-74","Male",6,,,,,,,
+2011,1001,"age_sex",,,,"75+","Female",7,,,,,,,
+2011,905,"age_sex",,,,"75+","Male",7,,,,,,,
+2011,779,"age_sex",,,,"8-16","Female",2,,,,,,,
+2011,1741,"age_sex",,,,"8-16","Male",2,,,,,,,
+2012,293,"age_sex",,,,"0-7","Female",1,,,,,,,
+2012,457,"age_sex",,,,"0-7","Male",1,,,,,,,
+2012,2589,"age_sex",,,,"17-25","Female",3,,,,,,,
+2012,5446,"age_sex",,,,"17-25","Male",3,,,,,,,
+2012,2535,"age_sex",,,,"26-39","Female",4,,,,,,,
+2012,5716,"age_sex",,,,"26-39","Male",4,,,,,,,
+2012,3539,"age_sex",,,,"40-64","Female",5,,,,,,,
+2012,7123,"age_sex",,,,"40-64","Male",5,,,,,,,
+2012,887,"age_sex",,,,"65-74","Female",6,,,,,,,
+2012,1054,"age_sex",,,,"65-74","Male",6,,,,,,,
+2012,1068,"age_sex",,,,"75+","Female",7,,,,,,,
+2012,990,"age_sex",,,,"75+","Male",7,,,,,,,
+2012,682,"age_sex",,,,"8-16","Female",2,,,,,,,
+2012,1645,"age_sex",,,,"8-16","Male",2,,,,,,,
+2013,293,"age_sex",,,,"0-7","Female",1,,,,,,,
+2013,439,"age_sex",,,,"0-7","Male",1,,,,,,,
+2013,2563,"age_sex",,,,"17-25","Female",3,,,,,,,
+2013,5289,"age_sex",,,,"17-25","Male",3,,,,,,,
+2013,2610,"age_sex",,,,"26-39","Female",4,,,,,,,
+2013,5861,"age_sex",,,,"26-39","Male",4,,,,,,,
+2013,3839,"age_sex",,,,"40-64","Female",5,,,,,,,
+2013,7505,"age_sex",,,,"40-64","Male",5,,,,,,,
+2013,962,"age_sex",,,,"65-74","Female",6,,,,,,,
+2013,1195,"age_sex",,,,"65-74","Male",6,,,,,,,
+2013,1062,"age_sex",,,,"75+","Female",7,,,,,,,
+2013,998,"age_sex",,,,"75+","Male",7,,,,,,,
+2013,713,"age_sex",,,,"8-16","Female",2,,,,,,,
+2013,1670,"age_sex",,,,"8-16","Male",2,,,,,,,
+2014,270,"age_sex",,,,"0-7","Female",1,,,,,,,
+2014,459,"age_sex",,,,"0-7","Male",1,,,,,,,
+2014,2646,"age_sex",,,,"17-25","Female",3,,,,,,,
+2014,5082,"age_sex",,,,"17-25","Male",3,,,,,,,
+2014,2718,"age_sex",,,,"26-39","Female",4,,,,,,,
+2014,5950,"age_sex",,,,"26-39","Male",4,,,,,,,
+2014,3874,"age_sex",,,,"40-64","Female",5,,,,,,,
+2014,7792,"age_sex",,,,"40-64","Male",5,,,,,,,
+2014,1042,"age_sex",,,,"65-74","Female",6,,,,,,,
+2014,1303,"age_sex",,,,"65-74","Male",6,,,,,,,
+2014,1072,"age_sex",,,,"75+","Female",7,,,,,,,
+2014,1075,"age_sex",,,,"75+","Male",7,,,,,,,
+2014,672,"age_sex",,,,"8-16","Female",2,,,,,,,
+2014,1559,"age_sex",,,,"8-16","Male",2,,,,,,,
+2015,326,"age_sex",,,,"0-7","Female",1,,,,,,,
+2015,424,"age_sex",,,,"0-7","Male",1,,,,,,,
+2015,2774,"age_sex",,,,"17-25","Female",3,,,,,,,
+2015,5108,"age_sex",,,,"17-25","Male",3,,,,,,,
+2015,2965,"age_sex",,,,"26-39","Female",4,,,,,,,
+2015,6012,"age_sex",,,,"26-39","Male",4,,,,,,,
+2015,3991,"age_sex",,,,"40-64","Female",5,,,,,,,
+2015,8207,"age_sex",,,,"40-64","Male",5,,,,,,,
+2015,1152,"age_sex",,,,"65-74","Female",6,,,,,,,
+2015,1313,"age_sex",,,,"65-74","Male",6,,,,,,,
+2015,1235,"age_sex",,,,"75+","Female",7,,,,,,,
+2015,1135,"age_sex",,,,"75+","Male",7,,,,,,,
+2015,718,"age_sex",,,,"8-16","Female",2,,,,,,,
+2015,1721,"age_sex",,,,"8-16","Male",2,,,,,,,
+2016,312,"age_sex",,,,"0-7","Female",1,,,,,,,
+2016,424,"age_sex",,,,"0-7","Male",1,,,,,,,
+2016,2986,"age_sex",,,,"17-25","Female",3,,,,,,,
+2016,5488,"age_sex",,,,"17-25","Male",3,,,,,,,
+2016,3202,"age_sex",,,,"26-39","Female",4,,,,,,,
+2016,6249,"age_sex",,,,"26-39","Male",4,,,,,,,
+2016,4360,"age_sex",,,,"40-64","Female",5,,,,,,,
+2016,8389,"age_sex",,,,"40-64","Male",5,,,,,,,
+2016,1183,"age_sex",,,,"65-74","Female",6,,,,,,,
+2016,1494,"age_sex",,,,"65-74","Male",6,,,,,,,
+2016,1196,"age_sex",,,,"75+","Female",7,,,,,,,
+2016,1204,"age_sex",,,,"75+","Male",7,,,,,,,
+2016,713,"age_sex",,,,"8-16","Female",2,,,,,,,
+2016,1763,"age_sex",,,,"8-16","Male",2,,,,,,,
+2017,322,"age_sex",,,,"0-7","Female",1,,,,,,,
+2017,418,"age_sex",,,,"0-7","Male",1,,,,,,,
+2017,3024,"age_sex",,,,"17-25","Female",3,,,,,,,
+2017,5444,"age_sex",,,,"17-25","Male",3,,,,,,,
+2017,3145,"age_sex",,,,"26-39","Female",4,,,,,,,
+2017,6363,"age_sex",,,,"26-39","Male",4,,,,,,,
+2017,4365,"age_sex",,,,"40-64","Female",5,,,,,,,
+2017,8572,"age_sex",,,,"40-64","Male",5,,,,,,,
+2017,1258,"age_sex",,,,"65-74","Female",6,,,,,,,
+2017,1519,"age_sex",,,,"65-74","Male",6,,,,,,,
+2017,1233,"age_sex",,,,"75+","Female",7,,,,,,,
+2017,1178,"age_sex",,,,"75+","Male",7,,,,,,,
+2017,736,"age_sex",,,,"8-16","Female",2,,,,,,,
+2017,1762,"age_sex",,,,"8-16","Male",2,,,,,,,
+2018,293,"age_sex",,,,"0-7","Female",1,,,,,,,
+2018,431,"age_sex",,,,"0-7","Male",1,,,,,,,
+2018,3011,"age_sex",,,,"17-25","Female",3,,,,,,,
+2018,5297,"age_sex",,,,"17-25","Male",3,,,,,,,
+2018,3324,"age_sex",,,,"26-39","Female",4,,,,,,,
+2018,6412,"age_sex",,,,"26-39","Male",4,,,,,,,
+2018,4362,"age_sex",,,,"40-64","Female",5,,,,,,,
+2018,8610,"age_sex",,,,"40-64","Male",5,,,,,,,
+2018,1258,"age_sex",,,,"65-74","Female",6,,,,,,,
+2018,1618,"age_sex",,,,"65-74","Male",6,,,,,,,
+2018,1301,"age_sex",,,,"75+","Female",7,,,,,,,
+2018,1249,"age_sex",,,,"75+","Male",7,,,,,,,
+2018,724,"age_sex",,,,"8-16","Female",2,,,,,,,
+2018,1698,"age_sex",,,,"8-16","Male",2,,,,,,,
+2019,282,"age_sex",,,,"0-7","Female",1,,,,,,,
+2019,422,"age_sex",,,,"0-7","Male",1,,,,,,,
+2019,2857,"age_sex",,,,"17-25","Female",3,,,,,,,
+2019,5245,"age_sex",,,,"17-25","Male",3,,,,,,,
+2019,3388,"age_sex",,,,"26-39","Female",4,,,,,,,
+2019,6253,"age_sex",,,,"26-39","Male",4,,,,,,,
+2019,4553,"age_sex",,,,"40-64","Female",5,,,,,,,
+2019,8615,"age_sex",,,,"40-64","Male",5,,,,,,,
+2019,1369,"age_sex",,,,"65-74","Female",6,,,,,,,
+2019,1699,"age_sex",,,,"65-74","Male",6,,,,,,,
+2019,1339,"age_sex",,,,"75+","Female",7,,,,,,,
+2019,1347,"age_sex",,,,"75+","Male",7,,,,,,,
+2019,711,"age_sex",,,,"8-16","Female",2,,,,,,,
+2019,1784,"age_sex",,,,"8-16","Male",2,,,,,,,
+2020,302,"age_sex",,,,"0-7","Female",1,,,,,,,
+2020,412,"age_sex",,,,"0-7","Male",1,,,,,,,
+2020,2720,"age_sex",,,,"17-25","Female",3,,,,,,,
+2020,5249,"age_sex",,,,"17-25","Male",3,,,,,,,
+2020,2924,"age_sex",,,,"26-39","Female",4,,,,,,,
+2020,6274,"age_sex",,,,"26-39","Male",4,,,,,,,
+2020,3951,"age_sex",,,,"40-64","Female",5,,,,,,,
+2020,8391,"age_sex",,,,"40-64","Male",5,,,,,,,
+2020,1158,"age_sex",,,,"65-74","Female",6,,,,,,,
+2020,1620,"age_sex",,,,"65-74","Male",6,,,,,,,
+2020,982,"age_sex",,,,"75+","Female",7,,,,,,,
+2020,1177,"age_sex",,,,"75+","Male",7,,,,,,,
+2020,744,"age_sex",,,,"8-16","Female",2,,,,,,,
+2020,2055,"age_sex",,,,"8-16","Male",2,,,,,,,
+2021,291,"age_sex",,,,"0-7","Female",1,,,,,,,
+2021,416,"age_sex",,,,"0-7","Male",1,,,,,,,
+2021,2783,"age_sex",,,,"17-25","Female",3,,,,,,,
+2021,5226,"age_sex",,,,"17-25","Male",3,,,,,,,
+2021,3237,"age_sex",,,,"26-39","Female",4,,,,,,,
+2021,6186,"age_sex",,,,"26-39","Male",4,,,,,,,
+2021,4324,"age_sex",,,,"40-64","Female",5,,,,,,,
+2021,8702,"age_sex",,,,"40-64","Male",5,,,,,,,
+2021,1223,"age_sex",,,,"65-74","Female",6,,,,,,,
+2021,1795,"age_sex",,,,"65-74","Male",6,,,,,,,
+2021,1145,"age_sex",,,,"75+","Female",7,,,,,,,
+2021,1313,"age_sex",,,,"75+","Male",7,,,,,,,
+2021,713,"age_sex",,,,"8-16","Female",2,,,,,,,
+2021,2150,"age_sex",,,,"8-16","Male",2,,,,,,,
+2011,,"road_user_age","Bus occupant",,,,,,7,21,24,58,31,61,12
+2011,,"road_user_age","Car driver",,,,,,0,2917,2790,3472,813,883,73
+2011,,"road_user_age","Car passenger",,,,,,273,1455,841,962,314,372,636
+2011,,"road_user_age","Car unknown position",,,,,,20,216,224,273,59,55,42
+2011,,"road_user_age","Heavy transport driver",,,,,,0,33,125,279,17,1,0
+2011,,"road_user_age","Heavy transport passenger",,,,,,1,10,12,19,7,0,3
+2011,,"road_user_age","Heavy transport unknown position",,,,,,0,2,9,38,4,0,2
+2011,,"road_user_age","Motorcyclist",,,,,,27,2042,2174,2645,161,42,474
+2011,,"road_user_age","Other or unknown",,,,,,20,123,120,187,79,46,35
+2011,,"road_user_age","Pedal cyclist",,,,,,204,668,1314,2017,240,87,861
+2011,,"road_user_age","Pedestrian",,,,,,163,532,466,633,232,355,373
+2011,,"road_user_age","Pick-up truck or van occupant",,,,,,4,75,67,77,11,4,9
+2012,,"road_user_age","Bus occupant",,,,,,9,11,29,68,22,69,9
+2012,,"road_user_age","Car driver",,,,,,2,2830,2736,3391,846,942,59
+2012,,"road_user_age","Car passenger",,,,,,308,1384,884,905,283,406,568
+2012,,"road_user_age","Car unknown position",,,,,,14,261,202,257,64,66,31
+2012,,"road_user_age","Heavy transport driver",,,,,,0,29,130,236,19,2,0
+2012,,"road_user_age","Heavy transport passenger",,,,,,2,14,12,15,1,2,1
+2012,,"road_user_age","Heavy transport unknown position",,,,,,0,4,14,28,1,0,1
+2012,,"road_user_age","Motorcyclist",,,,,,47,2077,2240,2679,166,41,478
+2012,,"road_user_age","Other or unknown",,,,,,18,119,114,186,30,67,29
+2012,,"road_user_age","Pedal cyclist",,,,,,202,731,1317,2157,282,104,828
+2012,,"road_user_age","Pedestrian",,,,,,144,502,513,641,208,351,313
+2012,,"road_user_age","Pick-up truck or van occupant",,,,,,4,73,60,99,19,8,10
+2013,,"road_user_age","Bus occupant",,,,,,7,16,24,66,38,69,6
+2013,,"road_user_age","Car driver",,,,,,4,2756,2830,3457,889,943,63
+2013,,"road_user_age","Car passenger",,,,,,302,1331,891,971,336,387,610
+2013,,"road_user_age","Car unknown position",,,,,,12,186,208,252,53,69,38
+2013,,"road_user_age","Heavy transport driver",,,,,,0,35,113,247,19,1,0
+2013,,"road_user_age","Heavy transport passenger",,,,,,0,6,5,25,0,0,4
+2013,,"road_user_age","Heavy transport unknown position",,,,,,0,1,4,19,4,1,0
+2013,,"road_user_age","Motorcyclist",,,,,,37,2084,2269,2879,205,73,471
+2013,,"road_user_age","Other or unknown",,,,,,24,98,106,184,37,52,35
+2013,,"road_user_age","Pedal cyclist",,,,,,194,778,1476,2517,321,105,871
+2013,,"road_user_age","Pedestrian",,,,,,150,495,482,656,244,351,279
+2013,,"road_user_age","Pick-up truck or van occupant",,,,,,2,66,64,72,11,9,6
+2014,,"road_user_age","Bus occupant",,,,,,3,28,34,91,37,75,21
+2014,,"road_user_age","Car driver",,,,,,5,2700,2830,3596,932,1012,47
+2014,,"road_user_age","Car passenger",,,,,,295,1317,822,938,355,395,503
+2014,,"road_user_age","Car unknown position",,,,,,16,184,193,207,45,58,25
+2014,,"road_user_age","Heavy transport driver",,,,,,0,28,87,237,23,2,0
+2014,,"road_user_age","Heavy transport passenger",,,,,,0,11,14,21,3,3,3
+2014,,"road_user_age","Heavy transport unknown position",,,,,,0,5,6,27,7,1,2
+2014,,"road_user_age","Motorcyclist",,,,,,36,2104,2413,3031,228,71,451
+2014,,"road_user_age","Other or unknown",,,,,,18,91,104,193,33,47,21
+2014,,"road_user_age","Pedal cyclist",,,,,,223,763,1626,2629,389,129,877
+2014,,"road_user_age","Pedestrian",,,,,,132,432,476,618,281,349,266
+2014,,"road_user_age","Pick-up truck or van occupant",,,,,,1,65,63,78,12,5,15
+2015,,"road_user_age","Bus occupant",,,,,,0,21,27,69,44,73,12
+2015,,"road_user_age","Car driver",,,,,,3,2918,3186,3853,1022,1122,59
+2015,,"road_user_age","Car passenger",,,,,,343,1296,904,988,378,423,626
+2015,,"road_user_age","Car unknown position",,,,,,12,194,206,216,66,83,35
+2015,,"road_user_age","Heavy transport driver",,,,,,0,27,118,273,22,3,1
+2015,,"road_user_age","Heavy transport passenger",,,,,,2,10,11,9,3,1,7
+2015,,"road_user_age","Heavy transport unknown position",,,,,,0,3,3,16,1,0,0
+2015,,"road_user_age","Motorcyclist",,,,,,37,2064,2322,3097,226,86,466
+2015,,"road_user_age","Other or unknown",,,,,,9,104,107,182,33,41,27
+2015,,"road_user_age","Pedal cyclist",,,,,,220,748,1539,2730,400,144,935
+2015,,"road_user_age","Pedestrian",,,,,,121,447,492,664,255,379,269
+2015,,"road_user_age","Pick-up truck or van occupant",,,,,,3,50,62,102,15,15,2
+2016,,"road_user_age","Bus occupant",,,,,,4,21,32,100,41,72,13
+2016,,"road_user_age","Car driver",,,,,,4,3204,3496,4156,1120,1164,50
+2016,,"road_user_age","Car passenger",,,,,,314,1466,932,990,350,446,605
+2016,,"road_user_age","Car unknown position",,,,,,25,190,197,239,65,64,28
+2016,,"road_user_age","Heavy transport driver",,,,,,0,33,80,256,28,5,1
+2016,,"road_user_age","Heavy transport passenger",,,,,,2,5,9,16,6,4,0
+2016,,"road_user_age","Heavy transport unknown position",,,,,,0,7,10,19,2,0,1
+2016,,"road_user_age","Motorcyclist",,,,,,27,2199,2424,3101,263,84,428
+2016,,"road_user_age","Other or unknown",,,,,,21,116,139,222,45,46,31
+2016,,"road_user_age","Pedal cyclist",,,,,,202,713,1540,2826,480,150,993
+2016,,"road_user_age","Pedestrian",,,,,,130,454,519,719,252,355,314
+2016,,"road_user_age","Pick-up truck or van occupant",,,,,,7,66,73,105,25,10,12
+2017,,"road_user_age","Bus occupant",,,,,,3,23,29,74,38,89,9
+2017,,"road_user_age","Car driver",,,,,,3,3239,3460,4221,1096,1186,62
+2017,,"road_user_age","Car passenger",,,,,,344,1402,934,966,381,452,623
+2017,,"road_user_age","Car unknown position",,,,,,15,180,202,243,61,54,22
+2017,,"road_user_age","Heavy transport driver",,,,,,0,41,108,263,35,0,0
+2017,,"road_user_age","Heavy transport passenger",,,,,,1,15,7,15,3,6,2
+2017,,"road_user_age","Heavy transport unknown position",,,,,,0,6,4,18,2,1,1
+2017,,"road_user_age","Motorcyclist",,,,,,35,2163,2478,3202,336,83,442
+2017,,"road_user_age","Other or unknown",,,,,,11,118,143,196,46,50,36
+2017,,"road_user_age","Pedal cyclist",,,,,,190,788,1570,2897,486,154,991
+2017,,"road_user_age","Pedestrian",,,,,,134,420,513,746,275,326,300
+2017,,"road_user_age","Pick-up truck or van occupant",,,,,,4,73,60,96,18,10,10
+2018,,"road_user_age","Bus occupant",,,,,,2,25,32,57,45,74,12
+2018,,"road_user_age","Car driver",,,,,,3,3328,3615,4185,1172,1232,60
+2018,,"road_user_age","Car passenger",,,,,,348,1387,932,978,390,491,680
+2018,,"road_user_age","Car unknown position",,,,,,11,183,234,287,50,73,26
+2018,,"road_user_age","Heavy transport driver",,,,,,0,48,106,251,25,7,0
+2018,,"road_user_age","Heavy transport passenger",,,,,,4,9,19,26,2,3,6
+2018,,"road_user_age","Heavy transport unknown position",,,,,,0,7,9,27,3,1,0
+2018,,"road_user_age","Motorcyclist",,,,,,34,1992,2536,3246,352,86,377
+2018,,"road_user_age","Other or unknown",,,,,,7,115,141,218,48,49,25
+2018,,"road_user_age","Pedal cyclist",,,,,,184,712,1541,2872,510,195,945
+2018,,"road_user_age","Pedestrian",,,,,,130,426,500,727,265,327,286
+2018,,"road_user_age","Pick-up truck or van occupant",,,,,,1,77,71,99,14,12,5
+2019,,"road_user_age","Bus occupant",,,,,,3,21,33,83,50,61,4
+2019,,"road_user_age","Car driver",,,,,,5,3063,3488,4298,1226,1350,52
+2019,,"road_user_age","Car passenger",,,,,,316,1294,924,979,391,482,603
+2019,,"road_user_age","Car unknown position",,,,,,5,177,243,236,63,57,16
+2019,,"road_user_age","Heavy transport driver",,,,,,0,28,108,261,22,6,0
+2019,,"road_user_age","Heavy transport passenger",,,,,,0,13,13,13,6,4,3
+2019,,"road_user_age","Heavy transport unknown position",,,,,,0,4,12,27,4,0,0
+2019,,"road_user_age","Motorcyclist",,,,,,34,2158,2476,3278,384,132,462
+2019,,"road_user_age","Other or unknown",,,,,,12,127,153,189,56,62,21
+2019,,"road_user_age","Pedal cyclist",,,,,,203,731,1589,2995,565,178,1041
+2019,,"road_user_age","Pedestrian",,,,,,123,428,531,714,286,346,285
+2019,,"road_user_age","Pick-up truck or van occupant",,,,,,3,58,71,97,15,8,8
+2020,,"road_user_age","Bus occupant",,,,,,0,21,19,50,22,45,16
+2020,,"road_user_age","Car driver",,,,,,6,3070,3253,3716,984,1122,66
+2020,,"road_user_age","Car passenger",,,,,,292,1275,816,794,303,335,529
+2020,,"road_user_age","Car unknown position",,,,,,10,153,211,236,57,39,25
+2020,,"road_user_age","Heavy transport driver",,,,,,0,25,122,231,29,5,0
+2020,,"road_user_age","Heavy transport passenger",,,,,,1,5,13,23,4,0,2
+2020,,"road_user_age","Heavy transport unknown position",,,,,,1,3,13,20,3,0,0
+2020,,"road_user_age","Motorcyclist",,,,,,32,2102,2501,3062,377,75,535
+2020,,"road_user_age","Other or unknown",,,,,,13,131,117,198,53,37,33
+2020,,"road_user_age","Pedal cyclist",,,,,,258,768,1681,3331,693,253,1348
+2020,,"road_user_age","Pedestrian",,,,,,100,333,396,567,234,239,234
+2020,,"road_user_age","Pick-up truck or van occupant",,,,,,1,85,60,114,20,9,11
+2021,,"road_user_age","Bus occupant",,,,,,1,10,20,58,28,44,8
+2021,,"road_user_age","Car driver",,,,,,9,3272,3571,4036,1119,1254,66
+2021,,"road_user_age","Car passenger",,,,,,288,1203,813,924,287,377,603
+2021,,"road_user_age","Car unknown position",,,,,,13,179,192,214,57,44,18
+2021,,"road_user_age","Heavy transport driver",,,,,,0,30,109,207,31,6,0
+2021,,"road_user_age","Heavy transport passenger",,,,,,1,15,13,15,5,4,3
+2021,,"road_user_age","Heavy transport unknown position",,,,,,0,2,12,18,4,0,0
+2021,,"road_user_age","Motorcyclist",,,,,,36,2020,2479,3259,402,112,575
+2021,,"road_user_age","Other or unknown",,,,,,14,105,137,194,62,44,45
+2021,,"road_user_age","Pedal cyclist",,,,,,217,727,1542,3393,749,285,1250
+2021,,"road_user_age","Pedestrian",,,,,,123,338,450,622,240,278,283
+2021,,"road_user_age","Pick-up truck or van occupant",,,,,,5,109,85,86,34,10,12
