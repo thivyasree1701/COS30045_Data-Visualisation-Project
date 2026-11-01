@@ -6,3 +6,90 @@ html,body{height:100dvh!important;min-height:0!important;overflow:hidden!importa
 .plot,.mini-plot,.age-plot{position:relative;padding:0!important}
 #trend svg text,#stack svg text,#donut svg text,#age-chart svg text,#people-heatmap svg text{font-size:12px!important;fill:#203B50}
 main{gap:10px!important;padding:16px 24px 8px!important}.page-header h1{font-size:27px!important;margin:4px 0!important}.page-header p{display:none}.metrics article{padding:8px 14px!important}.metrics strong{font-size:27px!important;margin:0!important}.metrics .metric-note{display:none}.chart-number{display:none}.card-header h2{margin:0 0 4px}.card-header{margin-bottom:6px}.charts{gap:12px!important}.real-table-button,.real-legend{font-size:12px;padding:2px 7px;margin:1px 0}.card-footer{padding-top:4px}.chart-card{position:relative}
+
+.people-layout.people-only{grid-template-columns:minmax(0,1fr)!important;grid-template-rows:minmax(0,1fr) minmax(0,1.2fr)!important}.people-only>.chart-card{grid-column:1/-1}
+
+
+.charts.overview-three{grid-template-columns:minmax(0,1.18fr) minmax(0,1fr);grid-template-rows:minmax(0,1fr) minmax(0,1fr)}.overview-three>.chart-card:last-child{grid-column:1/-1}
+
+/* SVG slices use their contour for focus, not a rectangular browser outline. */
+#donut path[tabindex]:focus,#remoteness-donut path[tabindex]:focus{outline:none!important;stroke:#203B50!important;stroke-width:3!important;filter:brightness(.96)}
+
+
+/* Friend's v3 reference: airy pastel surface and compact rounded controls. */
+:root{--blue:#527FA8;--ink:#33415C;--muted:#667792;--line:#E6ECF5;--cream:#F7FAFE;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+body{background:linear-gradient(135deg,#EEF5FD 0%,#F9F6FC 55%,#FDF6EE 100%);grid-template-columns:204px minmax(0,1fr)!important;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+.sidebar{background:#FFFFFF99;border-right:1px solid #E6ECF5;padding:16px 14px!important;gap:0}.sidebar-intro{display:none!important}.brand-icon{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,#8CCBED,#5B9BD5);font-size:24px}.brand{gap:10px;font-size:10px}.brand strong{font-size:15px}.filter-heading{font-size:13px;margin-top:18px}.filter-label{font-size:11px;color:#667792;margin:14px 0 5px}select{padding:8px;border-radius:9px;border-color:#D9E2EF;font-size:13px}.segments{background:white;border:1px solid #E6ECF5}.segments button[aria-pressed=true]{background:#D6E8F8;color:#33415C;font-weight:700}.filter-note,.scope-note{background:#FFFFFFAA;border-radius:10px;padding:8px 10px;font-size:11px;line-height:1.4}.reset{border-radius:9px;padding:8px;font-size:12px}.sidebar-bottom{font-size:10px}main{padding:14px 18px 10px!important;gap:9px!important;background:transparent}.page-header h1{font-size:25px!important;letter-spacing:-.6px}.eyebrow{color:#667792}.context-bar{border:0;min-height:35px}.page-nav{gap:4px;background:white;border:1px solid #E6ECF5;padding:4px;border-radius:99px;align-items:center;align-self:center}.page-nav a{padding:6px 16px;border:0;border-radius:99px;font-size:13px}.page-nav a[aria-current=page]{background:#D6E8F8;color:#33415C}.context-year{font-size:12px}.chart-card{background:#FFFFFFD9;border:1px solid #fff;border-radius:16px;padding:12px 14px!important;box-shadow:0 6px 18px #5B82BE19}.card-header h2{font-size:15px;color:#33415C}.card-header p{font-size:11px;color:#667792}.chart-tag{background:#F5F8FC;border:0}.metrics article{border:1px solid white;box-shadow:0 6px 18px #5B82BE14;border-radius:16px}.metrics article:nth-child(1){background:#E4F0FB}.metrics article:nth-child(2){background:#FDF0DD}.metrics article:nth-child(3){background:#E3F5EE}.metrics article:nth-child(4){background:#F7E8F2;color:#33415C;border-color:white}.metrics .metric-feature .metric-label,.metrics .metric-feature .metric-note{color:#667792}.metrics strong{font-size:24px!important}.real-table-button,.real-legend{background:#F0F5FC;color:#456A91;border:1px solid #E0E8F3;border-radius:7px}.page-notice{background:#FFFFFF70;border-color:#E6ECF5;font-size:11px}.chart-tooltip{border-color:#B8CBE0;border-radius:10px;color:#33415C}.map-key{font-size:10px;line-height:1.4}.state-ranking{flex-shrink:0;margin:4px 0;padding:8px 0 0;border-top:1px solid #E6ECF5}.state-ranking h3{font-size:13px;margin:0}.state-ranking p{font-size:10px;margin:2px 0 5px;color:#667792}#state-ranking{display:grid;grid-template-columns:1fr 1fr;gap:3px 12px}.rank-row{display:grid;grid-template-columns:30px minmax(20px,1fr) 96px;gap:6px;align-items:center;background:transparent;border:2px solid transparent;border-radius:7px;padding:2px 4px;text-align:left;color:#33415C;font-size:11px}.rank-row:hover{background:#EEF5FD}.rank-row[aria-pressed=true]{border-color:#EC8F66}.rank-track{height:9px;background:#EDF2F9;border-radius:4px;overflow:hidden}.rank-track i{height:100%;display:block;background:#78A5D6;border-radius:4px}.rank-row>span:last-child{text-align:right;font-variant-numeric:tabular-nums}.location-layout{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr)}
+@media(max-height:740px){.state-ranking{padding-top:4px}.rank-row{font-size:10px;padding:0 3px}.state-ranking p{display:none}.filter-heading{margin-top:12px}.sidebar .filter-note{margin:10px 0}.card-header h2{font-size:14px}.metrics strong{font-size:21px!important}}
+
+.charts.overview-four{grid-template-columns:minmax(0,1.18fr) minmax(0,1fr)!important;grid-template-rows:minmax(0,1fr) minmax(0,1fr)!important}.overview-four>.chart-card{grid-column:auto!important;grid-row:auto!important}
+
+/* Donut and directly visible, clickable category key. */
+.share-donut-layout{display:flex;align-items:center;gap:12px;width:100%;height:100%;min-height:0}.share-donut-layout>svg{position:static!important;inset:auto!important;width:32%!important;height:auto!important;max-height:100%;flex:0 0 32%;overflow:visible}.share-side-legend{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 10px;flex:1;min-width:0}.share-legend-item{display:flex;align-items:center;gap:5px;min-width:0;border:0;background:none;text-align:left;font:inherit;font-size:11px;color:#33415c;padding:3px 0;cursor:pointer}.share-legend-item i{width:10px;height:10px;border-radius:3px;flex-shrink:0}.share-legend-item span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.share-legend-item strong{margin-left:auto;white-space:nowrap;font-size:11px}.share-legend-item:hover,.share-legend-item[aria-pressed=true]{font-weight:700;background:#eef5fd;border-radius:4px}.donut-detail{width:min(760px,75vw);padding:15px 0}.share-donut-layout.large{min-height:350px}.share-donut-layout.large>svg{flex-basis:40%;width:40%!important}.large .share-side-legend{grid-template-columns:1fr}.large .share-legend-item,.large .share-legend-item strong{font-size:13px}.large .share-legend-item span{white-space:normal}.share-donut-layout svg text{font-family:inherit;font-size:14px}
+
+
+.people-layout.people-expanded{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)!important;grid-template-rows:minmax(0,.85fr) minmax(0,1.45fr)!important}.people-expanded>.chart-card:last-child{grid-column:1/-1}.people-expanded #people-heatmap svg text{font-size:11px!important}.people-expanded #people-heatmap{min-height:0}#road-bed-chart svg text{font:11px Arial,sans-serif}
+
+/* People page follows the reference's compact top bar and 1 : 1.45 rows. */
+body[data-page="age-sex"] main{display:grid!important;grid-template-columns:1fr auto;grid-template-rows:auto minmax(0,1fr) auto;gap:12px!important;padding:18px 22px 8px!important}
+body[data-page="age-sex"] .page-header{grid-column:1;grid-row:1;margin:0!important}
+body[data-page="age-sex"] .context-bar{grid-column:2;grid-row:1;align-self:center;border:0;padding:0;margin:0}
+body[data-page="age-sex"] .context-year,body[data-page="age-sex"] .page-notice{display:none}
+body[data-page="age-sex"] .people-expanded{grid-column:1/-1;grid-row:2;display:grid!important;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)!important;grid-template-rows:minmax(0,1fr) minmax(0,1.45fr)!important;gap:12px;min-height:0}
+body[data-page="age-sex"] main>footer{grid-column:1/-1;grid-row:3}
+body[data-page="age-sex"] .people-expanded>.chart-card{padding:14px 18px!important;min-height:0;display:flex;flex-direction:column}
+body[data-page="age-sex"] .people-expanded .card-header{margin-bottom:4px!important}
+body[data-page="age-sex"] .age-plot,body[data-page="age-sex"] .mini-plot{padding:0!important;min-height:0;position:relative}
+body[data-page="age-sex"] .age-plot>svg,body[data-page="age-sex"] .mini-plot>svg{position:absolute!important;inset:0;width:100%!important;height:100%!important}
+body[data-page="age-sex"] .people-expanded #people-heatmap svg text{font-size:12px!important}
+body[data-page="age-sex"] .people-expanded .card-footer{font-size:10px;padding-top:3px;margin-top:2px}
+
+/* Shared title-left / navigation-right header across all three pages. */
+body[data-page="overview"] main,body[data-page="states"] main{display:grid!important;grid-template-columns:minmax(0,1fr) auto;gap:12px!important;padding:18px 22px 8px!important}
+body[data-page="overview"] main{grid-template-rows:auto auto minmax(0,1fr) auto}
+body[data-page="states"] main{grid-template-rows:auto minmax(0,1fr) auto}
+body[data-page="overview"] .page-header,body[data-page="states"] .page-header{grid-column:1;grid-row:1;margin:0!important}
+body[data-page="overview"] .context-bar,body[data-page="states"] .context-bar{grid-column:2;grid-row:1;align-self:center;border:0;padding:0;margin:0}
+body[data-page="overview"] .context-year,body[data-page="states"] .context-year,body[data-page="states"] .page-notice{display:none}
+body[data-page="overview"] .metrics{grid-column:1/-1;grid-row:2}
+body[data-page="overview"] .charts{grid-column:1/-1;grid-row:3}
+body[data-page="overview"] main>footer{grid-column:1/-1;grid-row:4}
+body[data-page="states"] .location-layout{grid-column:1/-1;grid-row:2}
+body[data-page="states"] main>footer{grid-column:1/-1;grid-row:3}
+
+/* Preserve a visible circular focus indicator on bubble marks. */
+#bubble circle[tabindex]:focus,#bubble circle.detail-active,#road-bed-chart circle[tabindex]:focus,#road-bed-chart circle.detail-active{outline:none!important;stroke:#33415c!important;stroke-width:3px!important;filter:brightness(.97)}
+
+/* Expanded donut slices retain contour-based keyboard focus. */
+.donut-detail svg path[tabindex]:focus,.donut-detail svg path.detail-active{outline:none!important;stroke:#33415c!important;stroke-width:3px!important}
+
+.view-chart-button{border:1px solid #d7e3f2!important;border-radius:6px;background:#f2f6fd!important;color:#3368a0;font-size:11px!important;padding:4px 8px!important;white-space:nowrap;flex-shrink:0}.expanded-chart-dialog{width:min(1180px,94vw);max-width:94vw;padding:24px;max-height:92dvh}.expanded-close{float:right;border:0;background:none;font-size:26px;color:#33415c}.expanded-chart-dialog h2{margin:0 35px 4px 0}.expanded-chart-dialog>p{font-size:14px;margin:8px 0}.expanded-chart-canvas{height:min(60dvh,620px);min-height:300px;width:100%;position:relative;margin:16px 0}.expanded-chart-canvas>div{position:relative!important;width:100%!important;height:100%!important;max-height:none!important;padding:0!important}.expanded-chart-canvas svg{position:absolute!important;inset:0;width:100%!important;height:100%!important}.expanded-chart-info{background:#eef5fd;padding:12px;border-radius:8px}.expanded-source{color:#7283a0}.expanded-chart-canvas [tabindex]:focus,.expanded-chart-canvas .expanded-selected{outline:none!important;stroke:#33415c!important;stroke-width:3!important}
+
+/* Replay only on page entrance, not each filter or playback update. */
+@keyframes dashboard-rise-in{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes dashboard-fade-in{from{opacity:0}to{opacity:1}}
+body[data-page="overview"] main.page-entering .chart-card,body[data-page="age-sex"] main.page-entering .chart-card{animation:dashboard-rise-in .6s cubic-bezier(.2,.7,.25,1) both}
+body[data-page="overview"] main.page-entering .chart-card:nth-child(2),body[data-page="age-sex"] main.page-entering .chart-card:nth-child(2){animation-delay:.08s}
+body[data-page="overview"] main.page-entering .chart-card:nth-child(3),body[data-page="age-sex"] main.page-entering .chart-card:nth-child(3){animation-delay:.14s}
+body[data-page="overview"] main.page-entering .chart-card:nth-child(4){animation-delay:.2s}
+body[data-page="states"] main.page-entering .chart-card{animation:dashboard-fade-in .7s ease both}
+body[data-page="states"] main.page-entering .chart-card:nth-child(2){animation-delay:.12s}
+@media(prefers-reduced-motion:reduce){main.page-entering .chart-card,main.page-entering .metrics{animation:none!important}}
+
+/* Give the labelled heatmap more room within the fixed People viewport. */
+body[data-page="age-sex"] .people-expanded{grid-template-rows:minmax(0,1fr) minmax(0,1.65fr)!important}
+body[data-page="age-sex"] #people-heatmap svg text{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:12px!important}
+#people-heatmap text[role="button"]:focus{outline:none;text-decoration:underline;fill:#154d89!important}
+
+/* Taller top-row charts with slimmer grouped bars, matching the reference. */
+body[data-page="age-sex"] .people-expanded{grid-template-rows:minmax(0,1.15fr) minmax(0,1.45fr)!important}
+body[data-page="age-sex"] #age-chart{flex:1 1 0!important;min-height:0!important}
+
+/* Map key uses the same endpoints as the D3 map scale. */
+.map-key{display:flex;align-items:center;gap:8px;padding:5px 0;color:#7283a0;flex-shrink:0}
+.map-colour-ramp{display:inline-block;width:162px;height:10px;border-radius:8px;background:linear-gradient(to right,#eef4fc,#78a5d6)}
+
+.state-ranking .ranking-summary{display:block!important;background:#eef5ff;border-radius:10px;padding:6px 10px;margin:5px 0 6px;font-size:11px;color:#33415c;line-height:1.35}
+
+/* Only View chart is visible; its donut handler retains the full interactive view. */
+.donut-detail-button,.fn-detail-button{display:none!important}
