@@ -10,7 +10,8 @@
   const types = ['national_trend','road_user_shares','age_sex','road_user_age'];
   try {
     if (!d3) throw new Error('D3 could not load. Check your internet connection.');
-    records = await d3.csv('data/processed/national_dashboard.csv', row => {
+    records = (await window.dashboardData).filter(row=>types.includes(row.Data_type)).map(source => {
+      const row={...source};
       numeric.forEach(k => { if (k in row) row[k] = row[k].trim() === '' ? null : Number(row[k]); });
       // The source export calls its oldest age band "75++". Display it as 75+.
       if ('75++' in row) row['75+'] = row['75++'];
