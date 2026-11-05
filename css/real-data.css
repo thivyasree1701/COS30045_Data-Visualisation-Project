@@ -93,3 +93,36 @@ body[data-page="age-sex"] #age-chart{flex:1 1 0!important;min-height:0!important
 
 /* Only View chart is visible; its donut handler retains the full interactive view. */
 .donut-detail-button,.fn-detail-button{display:none!important}
+
+/* Expanded chart views: viewport-sized canvas with optional maximisation. */
+dialog.chart-view-dialog[open]{box-sizing:border-box;width:94vw;max-width:1500px;height:90dvh;max-height:90dvh;padding:24px;overflow:auto;background:white;border:1px solid #d7e3f2;border-radius:16px;box-shadow:0 24px 80px #203b5033}
+dialog.chart-view-dialog::backdrop{background:rgb(20 38 58 / 55%)}
+.chart-view-dialog .expanded-close{position:absolute;right:20px;top:18px}
+.chart-view-dialog h2{padding-right:180px}
+.chart-view-dialog .expanded-chart-canvas{height:calc(100% - 180px);min-height:180px;clear:both}
+.chart-view-dialog .expanded-chart-canvas>div{min-height:0!important;max-width:none!important}
+.chart-view-dialog .expanded-chart-canvas svg{max-width:none!important;max-height:none!important;display:block}
+.chart-view-dialog .donut-detail{width:100%;height:calc(100% - 170px);padding:0}
+.chart-view-dialog .share-donut-layout.large{height:calc(100% - 65px);min-height:180px}
+.chart-view-dialog .share-donut-layout.large>svg{width:55%!important;flex-basis:55%;height:100%!important;min-width:0}
+@media(max-width:650px){dialog.chart-view-dialog[open]{padding:16px}.chart-view-dialog h2{padding-right:0;clear:both;font-size:18px}.chart-view-dialog .expanded-chart-canvas{height:calc(100% - 210px)}.chart-view-dialog .share-donut-layout.large{flex-direction:column;height:auto}.chart-view-dialog .share-donut-layout.large>svg{width:100%!important;height:40dvh!important;flex-basis:auto}.chart-view-dialog .share-side-legend{width:100%}}
+
+/* View chart automatically uses the available dialog space. */
+dialog.expanded-chart-dialog.chart-view-dialog[open]{display:flex;flex-direction:column;gap:8px;overflow:hidden}
+.chart-view-dialog h2{padding-right:35px;margin:0;flex-shrink:0}
+.expanded-chart-dialog.chart-view-dialog>p{margin:0;flex-shrink:0}
+.expanded-chart-dialog.chart-view-dialog .expanded-chart-canvas{flex:1 1 0;height:auto;min-height:0;margin:10px 0}
+.expanded-chart-dialog.chart-view-dialog .expanded-chart-canvas>div{height:100%!important;width:100%!important}
+.chart-view-dialog .expanded-chart-info{min-height:42px}
+
+/* Use the modal's width for a chart and an explanatory detail panel. */
+.expanded-detail-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:24px;flex:1;min-height:0;margin:12px 0}
+.expanded-detail-layout .expanded-chart-canvas{height:100%!important;margin:0!important;min-width:0}
+.expanded-side-panel{padding:20px;background:#f3f7fc;border:1px solid #e2eaf4;border-radius:12px;overflow:auto;font-size:14px;line-height:1.65}
+.expanded-side-panel h3{font-size:15px;margin:0 0 10px}.expanded-side-panel h3:not(:first-child){margin-top:24px}
+.expanded-side-panel .expanded-chart-info{padding:12px;background:white;overflow-wrap:anywhere}
+.expanded-remoteness-legend{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+@media(max-width:800px){.expanded-detail-layout{grid-template-columns:minmax(0,1fr) 210px;gap:12px}.expanded-side-panel{padding:12px;font-size:12px}}
+.expanded-side-panel{font-size:13px;line-height:1.45;padding:16px}.expanded-side-panel p{margin:8px 0}.expanded-side-panel h3:not(:first-child){margin-top:16px}.expanded-remoteness-legend{gap:3px}.expanded-remoteness-legend .real-table-button{margin-top:8px}
+.page-header p{display:block!important;font-size:13px;line-height:1.4;margin:4px 0 0;color:#667792}.page-header h1{font-size:clamp(20px,2vw,27px)!important;line-height:1.2}
+.page-header{min-width:0}.dashboard-heading h1{font-weight:800;color:#173650;margin:0 0 6px!important}.dashboard-heading p{color:#526675;margin:0;line-height:1.4;text-wrap:pretty}
