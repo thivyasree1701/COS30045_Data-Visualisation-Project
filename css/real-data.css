@@ -126,3 +126,12 @@ dialog.expanded-chart-dialog.chart-view-dialog[open]{display:flex;flex-direction
 .expanded-side-panel{font-size:13px;line-height:1.45;padding:16px}.expanded-side-panel p{margin:8px 0}.expanded-side-panel h3:not(:first-child){margin-top:16px}.expanded-remoteness-legend{gap:3px}.expanded-remoteness-legend .real-table-button{margin-top:8px}
 .page-header p{display:block!important;font-size:13px;line-height:1.4;margin:4px 0 0;color:#667792}.page-header h1{font-size:clamp(20px,2vw,27px)!important;line-height:1.2}
 .page-header{min-width:0}.dashboard-heading h1{font-weight:800;color:#173650;margin:0 0 6px!important}.dashboard-heading p{color:#526675;margin:0;line-height:1.4;text-wrap:pretty}
+
+/* Evidence-led storytelling: compact captions and a gentle change cue. */
+.story-insight{flex-shrink:0;margin:0 0 6px;padding:5px 8px;border-left:3px solid #66a3bf;background:#f3f8fc;border-radius:0 5px 5px 0;color:#294961;font-size:11px;line-height:1.35}
+.expanded-chart-dialog .expanded-story{font-size:13px;line-height:1.45;margin:4px 0;padding:8px 12px;flex-shrink:0}
+@keyframes story-reveal{from{opacity:.45}to{opacity:1}}
+.story-reveal{animation:story-reveal .3s ease-out}
+.chart-card svg [data-detail]{transition:fill-opacity .2s ease,opacity .2s ease}
+@media(prefers-reduced-motion:reduce){.story-reveal{animation:none}.chart-card svg [data-detail]{transition:none}}
+main .chart-card:has(.story-insight) .card-header p{display:none}main .share-side-legend{gap:2px 8px}main .share-legend-item{padding:1px 0;line-height:1.15}main .share-legend-item,main .share-legend-item strong{font-size:10px}@media(max-height:800px){body[data-page="age-sex"] #people-heatmap svg text{font-size:10px!important}}
