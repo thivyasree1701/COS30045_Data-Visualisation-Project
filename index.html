@@ -6,7 +6,8 @@
   <meta name="description" content="Explore Australian road injury hospitalisations using BITRE and AIHW data.">
   <title>Road injury explorer · Australia</title>
   <link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/comparison.css">
-<link rel="stylesheet" href="css/real-data.css"></head>
+<link rel="stylesheet" href="css/real-data.css"><link rel="stylesheet" href="css/mobile-layout.css"><link rel="stylesheet" href="css/data-modal.css">
+</head>
 <body data-page="overview">
   <a class="skip" href="#main">Skip to dashboard</a>
   <aside class="sidebar" aria-label="Dashboard filters">
@@ -21,7 +22,7 @@
     <select id="road-user"><option value="all">All road users</option><option>Car occupant</option><option>Motorcyclist</option><option>Pedal cyclist</option><option>Pedestrian</option></select>
     <p class="filter-note" id="filter-note">Data notes: year and sex selections demonstrate controls. Chart shapes are illustrative, not filtered injury data. Road-user selection highlights a group.</p>
     <button type="button" class="reset" id="reset">↺ <span>Reset filters</span></button>
-    <div class="sidebar-bottom"><span class="source-dot"></span> A student data visualisation project<br><span>Source: BITRE / AIHW</span></div>
+    <div class="sidebar-bottom"><span class="source-dot"></span> Group 4 data visualization project<br><span>AUG 2026 session</span><br><span>Source: BITRE / AIHW</span></div>
   </aside>
   <main id="main">
     <header class="page-header"><div class="dashboard-heading"><h1>Road Injury in Australia</h1><p>Exploring National Hospitalisation Trends and Road Safety Patterns (2011&ndash;2021)</p></div></header>
@@ -41,10 +42,10 @@
     </div>
     <footer><span id="status" role="status">Preview only · no injury statistics are displayed.</span><a href="https://www.bitre.gov.au/resource/road-safety/hospitalised-injury" target="_blank" rel="noopener">Data source ↗</a></footer>
   </main>
-  <dialog id="details"><button type="button" id="close-dialog" aria-label="Close details">×</button><span class="eyebrow">DESIGN & DATA NOTES</span><h2 id="detail-title">About this preview</h2><p id="detail-text"></p><p>The interface uses the selected blue and cream palette. Chart categories use complementary blue, orange, teal and purple. Dark text, outlines and labels support readability. Final charts need verified CSVs, accessible data tables and validated interactions.</p></dialog>
+  <dialog id="details"><button type="button" id="close-dialog" aria-label="Close details">×</button><span class="eyebrow">DATA NOTES</span><h2 id="detail-title">About this preview</h2><p id="detail-text"></p></dialog>
   <noscript>JavaScript is required for this design preview. Summary values await verified data.</noscript>
   <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
   <script src="js/combined-charts.js"></script>
   <script src="js/national-data.js" defer></script>
-<script src="js/state-data.js" defer></script><script src="js/interactions.js" defer></script><script src="js/storytelling.js" defer></script></body>
+<script src="js/state-data.js" defer></script><script src="js/interactions.js" defer></script><script src="js/storytelling.js" defer></script><script src="js/mobile-layout.js" defer></script><script src="js/data-modal.js" defer></script></body>
 </html>
