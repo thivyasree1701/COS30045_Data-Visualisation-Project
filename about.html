@@ -1,229 +1,397 @@
+
 <!doctype html>
+
 <!-- GenAI note: drafted with Claude (Anthropic) and adjusted with Codex.
 Prompt summary: Integrate the supplied About page without adding content; retain its section tabs and prevent text overlap. -->
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="About the Road Injury Explorer: project purpose, key findings, glossary, data sources, limitations and the Group 4 team.">
-<title>About · Road injury explorer</title>
-<link rel="stylesheet" href="css/dashboard.css">
-<link rel="stylesheet" href="css/comparison.css">
-<link rel="stylesheet" href="css/real-data.css">
-<link rel="stylesheet" href="css/mobile-layout.css">
-<link rel="stylesheet" href="css/data-modal.css">
-<link rel="stylesheet" href="css/about.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="About the Road Injury Explorer: project purpose, key findings, glossary, data sources, limitations and the Group 4 team.">
+
+    <title>About · Road injury explorer</title>
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/comparison.css">
+    <link rel="stylesheet" href="css/real-data.css">
+    <link rel="stylesheet" href="css/mobile-layout.css">
+    <link rel="stylesheet" href="css/data-modal.css">
+    <link rel="stylesheet" href="css/about.css">
 
 </head>
+
 <!--
   GenAI declaration (COS30045): this page's HTML, CSS and JS were drafted with Claude (Anthropic).
   Prompt summary: "Add an About page with a glossary and team section that matches the existing pages,
   fits the window without scrolling, uses larger text and includes more detail." Team must review the text.
 -->
+
 <body data-page="about">
-<a class="skip" href="#main">Skip to content</a>
 
-<aside class="sidebar" aria-label="About page sections">
-  <a class="brand" href="#project"><span class="brand-icon" aria-label="Group 4">4</span><span>ROAD INJURY<br><strong>EXPLORER</strong></span></a>
-  <div class="sidebar-intro"><span class="eyebrow">AUSTRALIA · 2011–2021</span><p>Behind the<br>numbers.</p></div>
-  <div class="filter-heading">About this site <span aria-hidden="true">↓</span></div>
-  <div class="about-tabs" role="tablist" aria-label="About sections" aria-orientation="vertical">
-    <button type="button" role="tab" id="tab-project" aria-controls="panel-project" aria-selected="true">The project</button>
-    <button type="button" role="tab" id="tab-glossary" aria-controls="panel-glossary" aria-selected="false" tabindex="-1">Glossary</button>
-    <button type="button" role="tab" id="tab-sources" aria-controls="panel-sources" aria-selected="false" tabindex="-1">Data &amp; method</button>
-    <button type="button" role="tab" id="tab-team" aria-controls="panel-team" aria-selected="false" tabindex="-1">The team</button>
-  </div>
-  <div class="sidebar-bottom"><span class="source-dot"></span> Group 4 data visualization project<br><span>AUG 2026 session</span><br><span>Source: BITRE / AIHW</span></div>
-</aside>
+    <!-- Skip Link -->
+    <a class="skip" href="#main">Skip to content</a>
 
-<main id="main">
-  <header class="page-header"><div class="dashboard-heading"><h1>About This Project</h1><p>Purpose, key findings, glossary, data sources and the team behind the Road Injury Explorer</p></div></header>
+    <!-- Sidebar and Section Tabs -->
+    <aside class="sidebar" aria-label="About page sections">
 
-  <div class="context-bar">
-    <nav class="page-nav" aria-label="Dashboard pages"><a href="index.html">Overview</a><a href="age-sex.html">People</a><a href="states.html">Location</a><a href="about.html" aria-current="page">About</a></nav>
-  </div>
+        <a class="brand" href="#project">
+            <span class="brand-icon" aria-label="Group 4">4</span>
+            <span>ROAD INJURY<br><strong>EXPLORER</strong></span>
+        </a>
 
-  <div class="about-stage">
-
-    <!-- Panel 1: project, questions, key numbers, how to read -->
-    <div class="about-panel grid-2x2" id="panel-project" role="tabpanel" aria-labelledby="tab-project">
-      <section class="chart-card" aria-labelledby="project-title">
-        <div class="card-header"><div><h2 id="project-title">The project</h2><p>Why we built this and who it is for</p></div></div>
-        <div class="about-body">
-          <p>Road crashes are one of the leading causes of injury-related hospitalisation in Australia. Deaths get most of the attention, but non-fatal injuries are a far larger and ongoing burden on people, families and hospitals.</p>
-          <p>The Road Injury Explorer turns official counts from 2011 to 2021 into interactive charts for the public, road safety analysts, government officials and researchers.</p>
+        <div class="sidebar-intro">
+            <span class="eyebrow">AUSTRALIA · 2011–2021</span>
+            <p>Behind the<br>numbers.</p>
         </div>
-      </section>
 
-      <section class="chart-card" aria-labelledby="questions-title">
-        <div class="card-header"><div><h2 id="questions-title">Questions it answers</h2><p>One question for each part of the dashboard</p></div></div>
-        <ul class="about-list">
-          <li><strong>Overview:</strong> how have hospitalisations changed across Australia?</li>
-          <li><strong>Overview:</strong> which road users make up the largest share?</li>
-          <li><strong>People:</strong> how do age group and sex change the picture?</li>
-          <li><strong>Location:</strong> how do states and territories compare?</li>
-          <li><strong>Location:</strong> how do First Nations trends differ by remoteness?</li>
-        </ul>
-      </section>
-
-      <section class="chart-card" aria-labelledby="glance-title">
-        <div class="card-header"><div><h2 id="glance-title">At a glance</h2><p>National counts, 2011–2021</p></div></div>
-        <div class="stat-grid">
-          <div class="stat s-blue"><strong>39,505</strong><span>hospitalisations in 2021</span></div>
-          <div class="stat s-peach"><strong>+16.1%</strong><span>change since 2011</span></div>
-          <div class="stat s-green"><strong>2019</strong><span>highest year, 39,866 cases</span></div>
-          <div class="stat s-pink"><strong>+51.4%</strong><span>pedal cyclists since 2011</span></div>
+        <div class="filter-heading">
+            About this site <span aria-hidden="true">↓</span>
         </div>
-      </section>
 
-      <section class="chart-card" aria-labelledby="read-title">
-        <div class="card-header"><div><h2 id="read-title">Reading the charts</h2><p>Three things to keep in mind</p></div></div>
-        <div class="about-body">
-          <p class="about-callout"><strong>Counts are not risk.</strong> Larger states usually have larger counts simply because more people live there.</p>
-          <ul class="about-list">
-            <li><strong>Datasets overlap,</strong> so never add national, state and First Nations tables together.</li>
-            <li><strong>Deaths are excluded</strong> from hospitalisations but included in bed days.</li>
-            <li><strong>Need exact values?</strong> Choose <em>View data</em> on any chart.</li>
-          </ul>
+        <div class="about-tabs" role="tablist" aria-label="About sections" aria-orientation="vertical">
+            <button type="button" role="tab" id="tab-project" aria-controls="panel-project" aria-selected="true">The project</button>
+            <button type="button" role="tab" id="tab-glossary" aria-controls="panel-glossary" aria-selected="false" tabindex="-1">Glossary</button>
+            <button type="button" role="tab" id="tab-sources" aria-controls="panel-sources" aria-selected="false" tabindex="-1">Data &amp; method</button>
+            <button type="button" role="tab" id="tab-team" aria-controls="panel-team" aria-selected="false" tabindex="-1">The team</button>
         </div>
-      </section>
-    </div>
 
-    <!-- Panel 2: glossary -->
-    <div class="about-panel" id="panel-glossary" role="tabpanel" aria-labelledby="tab-glossary" hidden>
-      <section class="chart-card" aria-labelledby="glossary-title">
-        <div class="card-header"><div><h2 id="glossary-title">Glossary</h2><p>Plain-language definitions · pick a topic or search every term</p></div></div>
-        <div class="glossary-controls">
-          <label class="visually-hidden" for="glossary-search">Search terms</label>
-          <input id="glossary-search" type="search" placeholder="Search all terms, e.g. bed days" autocomplete="off" aria-controls="glossary-list">
-          <div class="glossary-filters" role="group" aria-label="Filter glossary by topic">
-            <button type="button" class="glossary-chip" data-filter="measures" aria-pressed="true">Measures</button>
-            <button type="button" class="glossary-chip" data-filter="road-users" aria-pressed="false">Road users</button>
-            <button type="button" class="glossary-chip" data-filter="people-places" aria-pressed="false">People &amp; places</button>
-            <button type="button" class="glossary-chip" data-filter="charts" aria-pressed="false">Chart types</button>
-          </div>
-          <span class="glossary-status" id="glossary-status" role="status" aria-live="polite"></span>
+        <div class="sidebar-bottom">
+            <span class="source-dot"></span> Group 4 data visualization project<br>
+            <span>AUG 2026 session</span><br>
+            <span>Source: BITRE / AIHW</span>
         </div>
-        <dl class="glossary-list" id="glossary-list">
-          <!-- Measures -->
-          <div class="glossary-item" data-category="measures"><dt>Hospitalised injury</dt><dd>A road-crash injury that led to a confirmed hospital admission. In-hospital deaths are not counted.</dd><span class="gl-where">All pages</span></div>
-          <div class="glossary-item" data-category="measures"><dt>Hospitalisation count</dt><dd>The number of admissions in a year for a group. It counts admissions, not individual patients.</dd><span class="gl-where">Every chart</span></div>
-          <div class="glossary-item" data-category="measures"><dt>Bed days</dt><dd>Total days patients spent in hospital. It shows hospital load, not injury risk.</dd><span class="gl-where">State hospital burden</span></div>
-          <div class="glossary-item" data-category="measures"><dt>Average stay</dt><dd>Bed days divided by hospitalisations for a state or territory.</dd><span class="gl-where">Bubble chart, vertical axis</span></div>
-          <div class="glossary-item" data-category="measures"><dt>Share (%)</dt><dd>One road-user group's hospitalisations as a percentage of that year's total. A year's shares add up to 100%.</dd><span class="gl-where">Donut, stacked bars</span></div>
-          <div class="glossary-item" data-category="measures"><dt>Change since 2011</dt><dd>The gap between the 2011 value and the selected year, as a percentage or a line between two dots.</dd><span class="gl-where">Overview card, dumbbell</span></div>
-          <div class="glossary-item" data-category="measures"><dt>Population-adjusted rate</dt><dd>Injuries per head of population. The dashboard does not show rates, so counts are not risk.</dd><span class="gl-where">Not shown</span></div>
-          <!-- Road users -->
-          <div class="glossary-item" data-category="road-users"><dt>Car driver</dt><dd>A person injured while driving a car. The largest group in 2021.</dd><span class="gl-where">Donut, heatmap</span></div>
-          <div class="glossary-item" data-category="road-users"><dt>Car passenger</dt><dd>A person injured while travelling in a car but not driving it.</dd><span class="gl-where">Donut, heatmap</span></div>
-          <div class="glossary-item" data-category="road-users"><dt>Car unknown position</dt><dd>A car occupant whose seating position was not recorded.</dd><span class="gl-where">Donut, heatmap</span></div>
-          <div class="glossary-item" data-category="road-users"><dt>Motorcyclist</dt><dd>A rider or passenger on a motorcycle.</dd><span class="gl-where">Donut, dumbbell</span></div>
-          <div class="glossary-item" data-category="road-users"><dt>Pedal cyclist</dt><dd>A person injured while riding a bicycle. The fastest-growing group since 2011.</dd><span class="gl-where">Dumbbell, stacked bars</span></div>
-          <div class="glossary-item" data-category="road-users"><dt>Pedestrian</dt><dd>A person on foot injured in a crash involving a vehicle.</dd><span class="gl-where">Donut, dumbbell</span></div>
-          <div class="glossary-item" data-category="road-users"><dt>Heavy transport</dt><dd>Occupants of heavy vehicles such as trucks, kept as driver, passenger and unknown position.</dd><span class="gl-where">Heatmap rows</span></div>
-          <div class="glossary-item" data-category="road-users"><dt>Pick-up truck or van</dt><dd>A person travelling in a pick-up truck or van.</dd><span class="gl-where">Donut, heatmap</span></div>
-          <div class="glossary-item" data-category="road-users"><dt>Bus occupant</dt><dd>A person injured while travelling on a bus.</dd><span class="gl-where">Donut, heatmap</span></div>
-          <div class="glossary-item" data-category="road-users"><dt>Other or unknown</dt><dd>Road users that fit no other group or were not identified. Included in all totals.</dd><span class="gl-where">All road-user charts</span></div>
-          <!-- People & places -->
-          <div class="glossary-item" data-category="people-places"><dt>Age groups</dt><dd>0–7, 8–16, 17–25, 26–39, 40–64, 65–74 and 75+. Groups span different numbers of years, so bar height alone is not risk.</dd><span class="gl-where">People page</span></div>
-          <div class="glossary-item" data-category="people-places"><dt>Known age and sex</dt><dd>Age and sex charts leave out records with a missing age or a sex not recorded as male or female.</dd><span class="gl-where">Age and sex bars</span></div>
-          <div class="glossary-item" data-category="people-places"><dt>Jurisdiction</dt><dd>One of Australia's eight states and territories: NSW, VIC, QLD, WA, SA, TAS, ACT and NT.</dd><span class="gl-where">Location page, bubbles</span></div>
-          <div class="glossary-item" data-category="people-places"><dt>Remoteness</dt><dd>A grouping of areas by distance from services. The First Nations data uses Major Cities, Regional and Remote.</dd><span class="gl-where">First Nations trends</span></div>
-          <div class="glossary-item" data-category="people-places"><dt>First Nations</dt><dd>Aboriginal and Torres Strait Islander peoples. Shown as national trends by remoteness, not ranked or compared.</dd><span class="gl-where">Location page</span></div>
-          <!-- Chart types -->
-          <div class="glossary-item" data-category="charts"><dt>Donut chart</dt><dd>A ring of slices. Slice size shows each road user's share of the year's total.</dd><span class="gl-where">Overview</span></div>
-          <div class="glossary-item" data-category="charts"><dt>100% stacked bar</dt><dd>One bar per year scaled to 100%, so segments show how the road-user mix changes.</dd><span class="gl-where">Overview</span></div>
-          <div class="glossary-item" data-category="charts"><dt>Bubble chart</dt><dd>Circles placed by two measures, with area showing a third. Here, area is total bed days.</dd><span class="gl-where">Overview</span></div>
-          <div class="glossary-item" data-category="charts"><dt>Dumbbell chart</dt><dd>Two dots joined by a line. Blue is 2011, orange is the selected year.</dd><span class="gl-where">People</span></div>
-          <div class="glossary-item" data-category="charts"><dt>Heatmap</dt><dd>A grid where darker cells mean more hospitalisations. Exact counts are printed in each cell.</dd><span class="gl-where">People</span></div>
-          <div class="glossary-item" data-category="charts"><dt>Choropleth map</dt><dd>A map shaded by count. Big areas can look more important than they are, so use the ranking too.</dd><span class="gl-where">Location</span></div>
-          <div class="glossary-item" data-category="charts"><dt>Brushing</dt><dd>Dragging across the small timeline to select a range of years. Use Clear Selection to reset.</dd><span class="gl-where">Location</span></div>
-        </dl>
-        <p class="glossary-empty" id="glossary-empty" hidden>No terms match your search. Try a shorter word.</p>
-      </section>
-    </div>
 
-    <!-- Panel 3: data, method, limitations, AI -->
-    <div class="about-panel grid-2x2" id="panel-sources" role="tabpanel" aria-labelledby="tab-sources" hidden>
-      <section class="chart-card" aria-labelledby="sources-title">
-        <div class="card-header"><div><h2 id="sources-title">Data sources</h2><p>Where the numbers come from</p></div></div>
-        <div class="about-body">
-          <p>All figures come from the BITRE <em>Hospitalised Injuries from Road Crashes</em> series, built from AIHW hospital data for 2011 to 2021.</p>
-          <ul class="about-list">
-            <li><strong>National:</strong> trends, road users, age and sex.</li>
-            <li><strong>State and territory:</strong> counts and bed days.</li>
-            <li><strong>First Nations:</strong> by remoteness.</li>
-          </ul>
-          <p><a href="https://www.bitre.gov.au/resource/road-safety/hospitalised-injury" target="_blank" rel="noopener">BITRE data and dictionary ↗</a></p>
+    </aside>
+
+    <!-- Main Content -->
+    <main id="main">
+
+        <!-- Page Header -->
+        <header class="page-header">
+            <div class="dashboard-heading">
+                <h1>About This Project</h1>
+                <p>Purpose, key findings, glossary, data sources and the team behind the Road Injury Explorer</p>
+            </div>
+        </header>
+
+        <!-- Navigation Bar -->
+        <div class="context-bar">
+            <nav class="page-nav" aria-label="Dashboard pages">
+                <a href="index.html">Overview</a>
+                <a href="age-sex.html">People</a>
+                <a href="states.html">Location</a>
+                <a href="about.html" aria-current="page">About</a>
+            </nav>
         </div>
-      </section>
 
-      <section class="chart-card" aria-labelledby="method-title">
-        <div class="card-header"><div><h2 id="method-title">How we prepared it</h2><p>From spreadsheets to charts</p></div></div>
-        <ol class="about-steps">
-          <li>Kept only road traffic injury records in KNIME.</li>
-          <li>Checked exact duplicates and standardised fields.</li>
-          <li>Built one combined file of 638 records, labelled by data type.</li>
-          <li>Drew every chart with D3.js and added a View data table.</li>
-        </ol>
-      </section>
+        <!-- About Page Sections -->
+        <div class="about-stage">
 
-      <section class="chart-card" aria-labelledby="limits-title">
-        <div class="card-header"><div><h2 id="limits-title">Limitations</h2><p>What the data cannot tell you</p></div></div>
-        <ul class="about-list">
-          <li>Counts are not adjusted for population, so they are not risk.</li>
-          <li>Each row is a count of admissions, not a patient.</li>
-          <li>Records with a missing age or sex are left out of the age and sex charts.</li>
-          <li>Definitions or recording may have changed over the years.</li>
-        </ul>
-      </section>
+            <!-- Panel 1: Project Overview -->
+            <div class="about-panel grid-2x2" id="panel-project" role="tabpanel" aria-labelledby="tab-project">
 
-      <section class="chart-card" aria-labelledby="ai-title">
-        <div class="card-header"><div><h2 id="ai-title">Use of AI</h2><p>Acknowledgement of generative AI help</p></div></div>
-        <div class="about-body">
-          <p>Codex assisted with the initial scaffold and with HTML, CSS, D3 chart code, CSV integration and interactions. Claude assisted with drafting this About page.</p>
-          <p>The team reviews and edits all AI-assisted work. AI help does not replace checking the source data.</p>
+                <section class="chart-card" aria-labelledby="project-title">
+                    <div class="card-header">
+                        <div>
+                            <h2 id="project-title">The project</h2>
+                            <p>Why we built this and who it is for</p>
+                        </div>
+                    </div>
+
+                    <div class="about-body">
+                        <p>Road crashes are one of the leading causes of injury-related hospitalisation in Australia. Deaths get most of the attention, but non-fatal injuries are a far larger and ongoing burden on people, families and hospitals.</p>
+                        <p>The Road Injury Explorer turns official counts from 2011 to 2021 into interactive charts for the public, road safety analysts, government officials and researchers.</p>
+                    </div>
+                </section>
+
+                <section class="chart-card" aria-labelledby="questions-title">
+                    <div class="card-header">
+                        <div>
+                            <h2 id="questions-title">Questions it answers</h2>
+                            <p>One question for each part of the dashboard</p>
+                        </div>
+                    </div>
+
+                    <ul class="about-list">
+                        <li><strong>Overview:</strong> how have hospitalisations changed across Australia?</li>
+                        <li><strong>Overview:</strong> which road users make up the largest share?</li>
+                        <li><strong>People:</strong> how do age group and sex change the picture?</li>
+                        <li><strong>Location:</strong> how do states and territories compare?</li>
+                        <li><strong>Location:</strong> how do First Nations trends differ by remoteness?</li>
+                    </ul>
+                </section>
+
+                <section class="chart-card" aria-labelledby="glance-title">
+                    <div class="card-header">
+                        <div>
+                            <h2 id="glance-title">At a glance</h2>
+                            <p>National counts, 2011–2021</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-grid">
+                        <div class="stat s-blue"><strong>39,505</strong><span>hospitalisations in 2021</span></div>
+                        <div class="stat s-peach"><strong>+16.1%</strong><span>change since 2011</span></div>
+                        <div class="stat s-green"><strong>2019</strong><span>highest year, 39,866 cases</span></div>
+                        <div class="stat s-pink"><strong>+51.4%</strong><span>pedal cyclists since 2011</span></div>
+                    </div>
+                </section>
+
+                <section class="chart-card" aria-labelledby="read-title">
+                    <div class="card-header">
+                        <div>
+                            <h2 id="read-title">Reading the charts</h2>
+                            <p>Three things to keep in mind</p>
+                        </div>
+                    </div>
+
+                    <div class="about-body">
+                        <p class="about-callout"><strong>Counts are not risk.</strong> Larger states usually have larger counts simply because more people live there.</p>
+                        <ul class="about-list">
+                            <li><strong>Datasets overlap,</strong> so never add national, state and First Nations tables together.</li>
+                            <li><strong>Deaths are excluded</strong> from hospitalisations but included in bed days.</li>
+                            <li><strong>Need exact values?</strong> Choose <em>View data</em> on any chart.</li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Panel 2: Glossary -->
+            <div class="about-panel" id="panel-glossary" role="tabpanel" aria-labelledby="tab-glossary" hidden>
+
+                <section class="chart-card" aria-labelledby="glossary-title">
+                    <div class="card-header">
+                        <div>
+                            <h2 id="glossary-title">Glossary</h2>
+                            <p>Plain-language definitions · pick a topic or search every term</p>
+                        </div>
+                    </div>
+
+                    <!-- Glossary Search and Filters -->
+                    <div class="glossary-controls">
+                        <label class="visually-hidden" for="glossary-search">Search terms</label>
+                        <input id="glossary-search" type="search" placeholder="Search all terms, e.g. bed days" autocomplete="off" aria-controls="glossary-list">
+
+                        <div class="glossary-filters" role="group" aria-label="Filter glossary by topic">
+                            <button type="button" class="glossary-chip" data-filter="measures" aria-pressed="true">Measures</button>
+                            <button type="button" class="glossary-chip" data-filter="road-users" aria-pressed="false">Road users</button>
+                            <button type="button" class="glossary-chip" data-filter="people-places" aria-pressed="false">People &amp; places</button>
+                            <button type="button" class="glossary-chip" data-filter="charts" aria-pressed="false">Chart types</button>
+                        </div>
+
+                        <span class="glossary-status" id="glossary-status" role="status" aria-live="polite"></span>
+                    </div>
+
+                    <!-- Glossary Terms -->
+                    <dl class="glossary-list" id="glossary-list">
+
+                        <!-- Measures -->
+                        <div class="glossary-item" data-category="measures"><dt>Hospitalised injury</dt><dd>A road-crash injury that led to a confirmed hospital admission. In-hospital deaths are not counted.</dd><span class="gl-where">All pages</span></div>
+                        <div class="glossary-item" data-category="measures"><dt>Hospitalisation count</dt><dd>The number of admissions in a year for a group. It counts admissions, not individual patients.</dd><span class="gl-where">Every chart</span></div>
+                        <div class="glossary-item" data-category="measures"><dt>Bed days</dt><dd>Total days patients spent in hospital. It shows hospital load, not injury risk.</dd><span class="gl-where">State hospital burden</span></div>
+                        <div class="glossary-item" data-category="measures"><dt>Average stay</dt><dd>Bed days divided by hospitalisations for a state or territory.</dd><span class="gl-where">Bubble chart, vertical axis</span></div>
+                        <div class="glossary-item" data-category="measures"><dt>Share (%)</dt><dd>One road-user group's hospitalisations as a percentage of that year's total. A year's shares add up to 100%.</dd><span class="gl-where">Donut, stacked bars</span></div>
+                        <div class="glossary-item" data-category="measures"><dt>Change since 2011</dt><dd>The gap between the 2011 value and the selected year, as a percentage or a line between two dots.</dd><span class="gl-where">Overview card, dumbbell</span></div>
+                        <div class="glossary-item" data-category="measures"><dt>Population-adjusted rate</dt><dd>Injuries per head of population. The dashboard does not show rates, so counts are not risk.</dd><span class="gl-where">Not shown</span></div>
+
+                        <!-- Road Users -->
+                        <div class="glossary-item" data-category="road-users"><dt>Car driver</dt><dd>A person injured while driving a car. The largest group in 2021.</dd><span class="gl-where">Donut, heatmap</span></div>
+                        <div class="glossary-item" data-category="road-users"><dt>Car passenger</dt><dd>A person injured while travelling in a car but not driving it.</dd><span class="gl-where">Donut, heatmap</span></div>
+                        <div class="glossary-item" data-category="road-users"><dt>Car unknown position</dt><dd>A car occupant whose seating position was not recorded.</dd><span class="gl-where">Donut, heatmap</span></div>
+                        <div class="glossary-item" data-category="road-users"><dt>Motorcyclist</dt><dd>A rider or passenger on a motorcycle.</dd><span class="gl-where">Donut, dumbbell</span></div>
+                        <div class="glossary-item" data-category="road-users"><dt>Pedal cyclist</dt><dd>A person injured while riding a bicycle. The fastest-growing group since 2011.</dd><span class="gl-where">Dumbbell, stacked bars</span></div>
+                        <div class="glossary-item" data-category="road-users"><dt>Pedestrian</dt><dd>A person on foot injured in a crash involving a vehicle.</dd><span class="gl-where">Donut, dumbbell</span></div>
+                        <div class="glossary-item" data-category="road-users"><dt>Heavy transport</dt><dd>Occupants of heavy vehicles such as trucks, kept as driver, passenger and unknown position.</dd><span class="gl-where">Heatmap rows</span></div>
+                        <div class="glossary-item" data-category="road-users"><dt>Pick-up truck or van</dt><dd>A person travelling in a pick-up truck or van.</dd><span class="gl-where">Donut, heatmap</span></div>
+                        <div class="glossary-item" data-category="road-users"><dt>Bus occupant</dt><dd>A person injured while travelling on a bus.</dd><span class="gl-where">Donut, heatmap</span></div>
+                        <div class="glossary-item" data-category="road-users"><dt>Other or unknown</dt><dd>Road users that fit no other group or were not identified. Included in all totals.</dd><span class="gl-where">All road-user charts</span></div>
+
+                        <!-- People and Places -->
+                        <div class="glossary-item" data-category="people-places"><dt>Age groups</dt><dd>0–7, 8–16, 17–25, 26–39, 40–64, 65–74 and 75+. Groups span different numbers of years, so bar height alone is not risk.</dd><span class="gl-where">People page</span></div>
+                        <div class="glossary-item" data-category="people-places"><dt>Known age and sex</dt><dd>Age and sex charts leave out records with a missing age or a sex not recorded as male or female.</dd><span class="gl-where">Age and sex bars</span></div>
+                        <div class="glossary-item" data-category="people-places"><dt>Jurisdiction</dt><dd>One of Australia's eight states and territories: NSW, VIC, QLD, WA, SA, TAS, ACT and NT.</dd><span class="gl-where">Location page, bubbles</span></div>
+                        <div class="glossary-item" data-category="people-places"><dt>Remoteness</dt><dd>A grouping of areas by distance from services. The First Nations data uses Major Cities, Regional and Remote.</dd><span class="gl-where">First Nations trends</span></div>
+                        <div class="glossary-item" data-category="people-places"><dt>First Nations</dt><dd>Aboriginal and Torres Strait Islander peoples. Shown as national trends by remoteness, not ranked or compared.</dd><span class="gl-where">Location page</span></div>
+
+                        <!-- Chart Types -->
+                        <div class="glossary-item" data-category="charts"><dt>Donut chart</dt><dd>A ring of slices. Slice size shows each road user's share of the year's total.</dd><span class="gl-where">Overview</span></div>
+                        <div class="glossary-item" data-category="charts"><dt>100% stacked bar</dt><dd>One bar per year scaled to 100%, so segments show how the road-user mix changes.</dd><span class="gl-where">Overview</span></div>
+                        <div class="glossary-item" data-category="charts"><dt>Bubble chart</dt><dd>Circles placed by two measures, with area showing a third. Here, area is total bed days.</dd><span class="gl-where">Overview</span></div>
+                        <div class="glossary-item" data-category="charts"><dt>Dumbbell chart</dt><dd>Two dots joined by a line. Blue is 2011, orange is the selected year.</dd><span class="gl-where">People</span></div>
+                        <div class="glossary-item" data-category="charts"><dt>Heatmap</dt><dd>A grid where darker cells mean more hospitalisations. Exact counts are printed in each cell.</dd><span class="gl-where">People</span></div>
+                        <div class="glossary-item" data-category="charts"><dt>Choropleth map</dt><dd>A map shaded by count. Big areas can look more important than they are, so use the ranking too.</dd><span class="gl-where">Location</span></div>
+                        <div class="glossary-item" data-category="charts"><dt>Brushing</dt><dd>Dragging across the small timeline to select a range of years. Use Clear Selection to reset.</dd><span class="gl-where">Location</span></div>
+
+                    </dl>
+
+                    <p class="glossary-empty" id="glossary-empty" hidden>No terms match your search. Try a shorter word.</p>
+                </section>
+            </div>
+
+            <!-- Panel 3: Data and Method -->
+            <div class="about-panel grid-2x2" id="panel-sources" role="tabpanel" aria-labelledby="tab-sources" hidden>
+
+                <section class="chart-card" aria-labelledby="sources-title">
+                    <div class="card-header">
+                        <div>
+                            <h2 id="sources-title">Data sources</h2>
+                            <p>Where the numbers come from</p>
+                        </div>
+                    </div>
+
+                    <div class="about-body">
+                        <p>All figures come from the BITRE <em>Hospitalised Injuries from Road Crashes</em> series, built from AIHW hospital data for 2011 to 2021.</p>
+                        <ul class="about-list">
+                            <li><strong>National:</strong> trends, road users, age and sex.</li>
+                            <li><strong>State and territory:</strong> counts and bed days.</li>
+                            <li><strong>First Nations:</strong> by remoteness.</li>
+                        </ul>
+                        <p><a href="https://www.bitre.gov.au/resource/road-safety/hospitalised-injury" target="_blank" rel="noopener">BITRE data and dictionary ↗</a></p>
+                    </div>
+                </section>
+
+                <section class="chart-card" aria-labelledby="method-title">
+                    <div class="card-header">
+                        <div>
+                            <h2 id="method-title">How we prepared it</h2>
+                            <p>From spreadsheets to charts</p>
+                        </div>
+                    </div>
+
+                    <ol class="about-steps">
+                        <li>Kept only road traffic injury records in KNIME.</li>
+                        <li>Checked exact duplicates and standardised fields.</li>
+                        <li>Built one combined file of 638 records, labelled by data type.</li>
+                        <li>Drew every chart with D3.js and added a View data table.</li>
+                    </ol>
+                </section>
+
+                <section class="chart-card" aria-labelledby="limits-title">
+                    <div class="card-header">
+                        <div>
+                            <h2 id="limits-title">Limitations</h2>
+                            <p>What the data cannot tell you</p>
+                        </div>
+                    </div>
+
+                    <ul class="about-list">
+                        <li>Counts are not adjusted for population, so they are not risk.</li>
+                        <li>Each row is a count of admissions, not a patient.</li>
+                        <li>Records with a missing age or sex are left out of the age and sex charts.</li>
+                        <li>Definitions or recording may have changed over the years.</li>
+                    </ul>
+                </section>
+
+                <section class="chart-card" aria-labelledby="ai-title">
+                    <div class="card-header">
+                        <div>
+                            <h2 id="ai-title">Use of AI</h2>
+                            <p>Acknowledgement of generative AI help</p>
+                        </div>
+                    </div>
+
+                    <div class="about-body">
+                        <p>Codex assisted with the initial scaffold and with HTML, CSS, D3 chart code, CSV integration and interactions. Claude assisted with drafting this About page.</p>
+                        <p>The team reviews and edits all AI-assisted work. AI help does not replace checking the source data.</p>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Panel 4: Team -->
+            <div class="about-panel team-panel" id="panel-team" role="tabpanel" aria-labelledby="tab-team" hidden>
+
+                <section class="chart-card team-row" aria-labelledby="team-title">
+                    <div class="card-header">
+                        <div>
+                            <h2 id="team-title">Meet the team</h2>
+                            <p>Group 4 · COS30045 Data Visualisation · Swinburne University of Technology</p>
+                        </div>
+                    </div>
+
+                    <div class="team-grid">
+                        <article class="team-card">
+                            <span class="team-avatar" aria-hidden="true">CE</span>
+                            <h3>Cheong En Ying</h3>
+                            <ul>
+                                <li>KNIME workflows</li>
+                                <li>National trend chart and state map</li>
+                                <li>Created and shared the Design Book</li>
+                                <li>Helped divide team tasks</li>
+                            </ul>
+                        </article>
+
+                        <article class="team-card">
+                            <span class="team-avatar" aria-hidden="true">TS</span>
+                            <h3>Thivyasree A/P Sunder</h3>
+                            <ul>
+                                <li>Road-user donut, stacked bars and dumbbell</li>
+                                <li>Data cleaning and CSV integration</li>
+                                <li>Website updates and GitHub</li>
+                                <li>Presentation assembly</li>
+                            </ul>
+                        </article>
+
+                        <article class="team-card">
+                            <span class="team-avatar" aria-hidden="true">JM</span>
+                            <h3>Janani A/P Murugan</h3>
+                            <ul>
+                                <li>Age-and-sex bars</li>
+                                <li>Road-user by age heatmap</li>
+                                <li>First Nations chart</li>
+                                <li>Design Book and presentation</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="chart-card" aria-labelledby="how-title">
+                    <div class="card-header">
+                        <div>
+                            <h2 id="how-title">How we worked</h2>
+                            <p>Shared by everyone</p>
+                        </div>
+                    </div>
+
+                    <div class="about-body">
+                        <p>All three of us contributed ideas, design reviews, testing and documentation, and we each understand the submitted work. We communicate through WhatsApp, shared documents and GitHub.</p>
+                    </div>
+                </section>
+
+                <section class="chart-card" aria-labelledby="unit-title">
+                    <div class="card-header">
+                        <div>
+                            <h2 id="unit-title">About the unit</h2>
+                            <p>Where this project fits</p>
+                        </div>
+                    </div>
+
+                    <div class="about-body">
+                        <p>Built for COS30045 Data Visualisation at Swinburne, using BITRE and AIHW open data.</p>
+                        <p><a href="https://github.com/thivyasree1701/COS30045_Data-Visualisation-Project" target="_blank" rel="noopener">Project repository on GitHub ↗</a></p>
+                    </div>
+                </section>
+
+            </div>
+
         </div>
-      </section>
-    </div>
 
-    <!-- Panel 4: team -->
-    <div class="about-panel team-panel" id="panel-team" role="tabpanel" aria-labelledby="tab-team" hidden>
-      <section class="chart-card team-row" aria-labelledby="team-title">
-        <div class="card-header"><div><h2 id="team-title">Meet the team</h2><p>Group 4 · COS30045 Data Visualisation · Swinburne University of Technology</p></div></div>
-        <div class="team-grid">
-          <article class="team-card"><span class="team-avatar" aria-hidden="true">CE</span><h3>Cheong En Ying</h3>
-            <ul><li>KNIME workflows</li><li>National trend chart and state map</li><li>Created and shared the Design Book</li><li>Helped divide team tasks</li></ul></article>
-          <article class="team-card"><span class="team-avatar" aria-hidden="true">TS</span><h3>Thivyasree A/P Sunder</h3>
-            <ul><li>Road-user donut, stacked bars and dumbbell</li><li>Data cleaning and CSV integration</li><li>Website updates and GitHub</li><li>Presentation assembly</li></ul></article>
-          <article class="team-card"><span class="team-avatar" aria-hidden="true">JM</span><h3>Janani A/P Murugan</h3>
-            <ul><li>Age-and-sex bars</li><li>Road-user by age heatmap</li><li>First Nations chart</li><li>Design Book and presentation</li></ul></article>
-        </div>
-      </section>
+        <!-- Footer and Data Source -->
+        <footer>
+            <span id="status" role="status">Counts describe hospital burden, not population-adjusted risk.</span>
+            <a href="https://www.bitre.gov.au/resource/road-safety/hospitalised-injury" target="_blank" rel="noopener">Data source ↗</a>
+        </footer>
 
-      <section class="chart-card" aria-labelledby="how-title">
-        <div class="card-header"><div><h2 id="how-title">How we worked</h2><p>Shared by everyone</p></div></div>
-        <div class="about-body">
-          <p>All three of us contributed ideas, design reviews, testing and documentation, and we each understand the submitted work. We communicate through WhatsApp, shared documents and GitHub.</p>
-        </div>
-      </section>
+    </main>
 
-      <section class="chart-card" aria-labelledby="unit-title">
-        <div class="card-header"><div><h2 id="unit-title">About the unit</h2><p>Where this project fits</p></div></div>
-        <div class="about-body">
-          <p>Built for COS30045 Data Visualisation at Swinburne, using BITRE and AIHW open data.</p>
-          <p><a href="https://github.com/thivyasree1701/COS30045_Data-Visualisation-Project" target="_blank" rel="noopener">Project repository on GitHub ↗</a></p>
-        </div>
-      </section>
-    </div>
+    <!-- JavaScript -->
+    <noscript>JavaScript is needed to switch between the sections on this page.</noscript>
 
-  </div>
+    <script src="js/mobile-layout.js" defer></script>
+    <script src="js/about.js" defer></script>
 
-  <footer><span id="status" role="status">Counts describe hospital burden, not population-adjusted risk.</span><a href="https://www.bitre.gov.au/resource/road-safety/hospitalised-injury" target="_blank" rel="noopener">Data source ↗</a></footer>
-</main>
-
-<noscript>JavaScript is needed to switch between the sections on this page.</noscript>
-<script src="js/mobile-layout.js" defer></script>
-<script src="js/about.js" defer></script>
 </body>
 </html>

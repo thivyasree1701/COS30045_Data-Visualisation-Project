@@ -5,37 +5,180 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Explore Australian road injury hospitalisations using BITRE and AIHW data.">
   <title>Across Australia. · Group 4 Road Injury Explorer</title>
-  <link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/comparison.css">
-<link rel="stylesheet" href="css/real-data.css"><link rel="stylesheet" href="css/mobile-layout.css"><link rel="stylesheet" href="css/data-modal.css">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/comparison.css">
+  <link rel="stylesheet" href="css/real-data.css">
+  <link rel="stylesheet" href="css/mobile-layout.css">
+  <link rel="stylesheet" href="css/data-modal.css">
 </head>
 <body data-page="states">
+  <!-- Skip Link -->
   <a class="skip" href="#main">Skip to dashboard</a>
+
+  <!-- Sidebar and Filters -->
   <aside class="sidebar" aria-label="Dashboard filters">
-    <a class="brand" href="index.html"><span class="brand-icon" aria-label="Group 4">4</span><span>ROAD INJURY<br><strong>EXPLORER</strong></span></a>
-    <div class="sidebar-intro"><span class="eyebrow">AUSTRALIA · 2011–2021</span><p>A clearer view of<br>our roads.</p></div>
+    <a class="brand" href="index.html">
+      <span class="brand-icon" aria-label="Group 4">4</span>
+      <span>ROAD INJURY<br><strong>EXPLORER</strong></span>
+    </a>
+
+    <div class="sidebar-intro">
+      <span class="eyebrow">AUSTRALIA · 2011–2021</span>
+      <p>A clearer view of<br>our roads.</p>
+    </div>
+
     <div class="filter-heading">Explore the data <span aria-hidden="true">↓</span></div>
+
     <label class="filter-label" for="year">Comparison year</label>
     <select id="year" aria-describedby="filter-note"></select>
     <input id="year-range" type="range" min="2011" max="2021" value="2021" aria-label="Comparison year slider">
-    <div class="range-labels"><span>2011</span><span>2021</span></div>
+
+    <div class="range-labels">
+      <span>2011</span>
+      <span>2021</span>
+    </div>
+
     <label class="filter-label" for="state">State or territory</label>
-    <select id="state"><option value="all">All jurisdictions</option><option value="NSW">New South Wales</option><option value="VIC">Victoria</option><option value="QLD">Queensland</option><option value="WA">Western Australia</option><option value="SA">South Australia</option><option value="TAS">Tasmania</option><option value="ACT">Australian Capital Territory</option><option value="NT">Northern Territory</option></select>
+    <select id="state">
+      <option value="all">All jurisdictions</option>
+      <option value="NSW">New South Wales</option>
+      <option value="VIC">Victoria</option>
+      <option value="QLD">Queensland</option>
+      <option value="WA">Western Australia</option>
+      <option value="SA">South Australia</option>
+      <option value="TAS">Tasmania</option>
+      <option value="ACT">Australian Capital Territory</option>
+      <option value="NT">Northern Territory</option>
+    </select>
+
     <p class="scope-note">State data supports year and jurisdiction comparisons. Sex and road-user filters are not applied to this page.</p>
     <p class="filter-note" id="filter-note">Choose a year to compare eight jurisdictions. Counts show hospital burden, not population-adjusted risk.</p>
+
     <button type="button" class="reset" id="reset">↺ <span>Reset filters</span></button>
-    <div class="sidebar-bottom"><span class="source-dot"></span> Group 4 data visualization project<br><span>AUG 2026 session</span><br><span>Source: BITRE / AIHW</span></div>
+
+    <div class="sidebar-bottom">
+      <span class="source-dot"></span> Group 4 data visualization project<br>
+      <span>AUG 2026 session</span><br>
+      <span>Source: BITRE / AIHW</span>
+    </div>
   </aside>
+
+  <!-- Main Content -->
   <main id="main">
-    <header class="page-header"><div class="dashboard-heading"><h1>Where Is the Hospitalisation Burden?</h1><p>Examining Hospitalisation Patterns Across Australian States, Territories and Remoteness Areas</p></div></header>
-    
-    <div class="context-bar"><nav class="page-nav" aria-label="Dashboard pages"><a href="index.html">Overview</a><a href="age-sex.html">People</a><a href="states.html" aria-current="page">Location</a><a href="about.html">About</a></nav><span class="context-year">Comparison year <strong data-year>2021</strong></span></div>
-<div class="page-notice"><span class="notice-icon">i</span><p><strong>Real state data.</strong> The map uses your local ABS 2021 boundary file. Colour shows hospitalisation counts; click a state to highlight it.</p></div><div class="comparison-layout location-layout"><section class="chart-card map-card"><div class="card-header"><div><h2>Hospitalisations by state and territory</h2><p>States and territories · <span data-year>2021</span></p></div></div><div class="map-plot" id="state-map"><p>Loading Australian boundaries…</p></div><div class="state-ranking"><h3>State ranking</h3><p>Hospitalisations · average stay</p><div id="state-ranking"></div></div><div class="map-key"><span class="map-swatch"></span><span>Lighter → darker: fewer → more hospitalisations</span></div><div class="card-footer"><span>Simplified ABS boundaries · GDA2020</span><button type="button" data-info="map">Map notes ↗</button></div></section><section class="chart-card"><div class="card-header"><div><h2>First Nations trends by remoteness</h2><p>National First Nations hospitalisations · <span data-year>2021</span></p></div></div><div class="mini-plot" id="remoteness-donut"></div><div class="remoteness-list"><span>Major cities</span><span>Inner regional</span><span>Outer regional</span><span>Remote</span><span>Very remote</span></div><p class="method-note">Drag across the small lower timeline to select a year range. The sidebar year highlights one year; state selection applies only to the map.</p><div class="card-footer"><span>BITRE / AIHW · known remoteness only</span></div></section></div><span id="selected-state" hidden></span><span id="state-detail" hidden></span>
-    <footer><span id="status" role="status">Preview only · no injury statistics are displayed.</span><a href="https://www.bitre.gov.au/resource/road-safety/hospitalised-injury" target="_blank" rel="noopener">Data source ↗</a></footer>
+
+    <!-- Page Header -->
+    <header class="page-header">
+      <div class="dashboard-heading">
+        <h1>Where Is the Hospitalisation Burden?</h1>
+        <p>Examining Hospitalisation Patterns Across Australian States, Territories and Remoteness Areas</p>
+      </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <div class="context-bar">
+      <nav class="page-nav" aria-label="Dashboard pages">
+        <a href="index.html">Overview</a>
+        <a href="age-sex.html">People</a>
+        <a href="states.html" aria-current="page">Location</a>
+        <a href="about.html">About</a>
+      </nav>
+      <span class="context-year">Comparison year <strong data-year>2021</strong></span>
+    </div>
+
+    <!-- Page Notice -->
+    <div class="page-notice">
+      <span class="notice-icon">i</span>
+      <p><strong>Real state data.</strong> The map uses your local ABS 2021 boundary file. Colour shows hospitalisation counts; click a state to highlight it.</p>
+    </div>
+
+    <!-- Location Dashboard Charts -->
+    <div class="comparison-layout location-layout">
+
+      <!-- Chart 1: Hospitalisations by State and Territory -->
+      <section class="chart-card map-card">
+        <div class="card-header">
+          <div>
+            <h2>Hospitalisations by state and territory</h2>
+            <p>States and territories · <span data-year>2021</span></p>
+          </div>
+        </div>
+
+        <div class="map-plot" id="state-map">
+          <p>Loading Australian boundaries…</p>
+        </div>
+
+        <div class="state-ranking">
+          <h3>State ranking</h3>
+          <p>Hospitalisations · average stay</p>
+          <div id="state-ranking"></div>
+        </div>
+
+        <div class="map-key">
+          <span class="map-swatch"></span>
+          <span>Lighter → darker: fewer → more hospitalisations</span>
+        </div>
+
+        <div class="card-footer">
+          <span>Simplified ABS boundaries · GDA2020</span>
+          <button type="button" data-info="map">Map notes ↗</button>
+        </div>
+      </section>
+
+      <!-- Chart 2: First Nations Trends by Remoteness -->
+      <section class="chart-card">
+        <div class="card-header">
+          <div>
+            <h2>First Nations trends by remoteness</h2>
+            <p>National First Nations hospitalisations · <span data-year>2021</span></p>
+          </div>
+        </div>
+
+        <div class="mini-plot" id="remoteness-donut"></div>
+
+        <div class="remoteness-list">
+          <span>Major cities</span>
+          <span>Inner regional</span>
+          <span>Outer regional</span>
+          <span>Remote</span>
+          <span>Very remote</span>
+        </div>
+
+        <p class="method-note">Drag across the small lower timeline to select a year range. The sidebar year highlights one year; state selection applies only to the map.</p>
+
+        <div class="card-footer">
+          <span>BITRE / AIHW · known remoteness only</span>
+        </div>
+      </section>
+    </div>
+
+    <span id="selected-state" hidden></span>
+    <span id="state-detail" hidden></span>
+
+    <!-- Footer and Data Source -->
+    <footer>
+      <span id="status" role="status">Preview only · no injury statistics are displayed.</span>
+      <a href="https://www.bitre.gov.au/resource/road-safety/hospitalised-injury" target="_blank" rel="noopener">Data source ↗</a>
+    </footer>
   </main>
-  <dialog id="details"><button type="button" id="close-dialog" aria-label="Close details">×</button><span class="eyebrow">DATA NOTES</span><h2 id="detail-title">About this preview</h2><p id="detail-text"></p></dialog>
+
+  <!-- Data Notes Dialog -->
+  <dialog id="details">
+    <button type="button" id="close-dialog" aria-label="Close details">×</button>
+    <span class="eyebrow">DATA NOTES</span>
+    <h2 id="detail-title">About this preview</h2>
+    <p id="detail-text"></p>
+  </dialog>
+
+  <!-- JavaScript and Chart Libraries -->
   <noscript>JavaScript is required for this design preview. Summary values await verified data.</noscript>
   <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
   <script src="js/combined-charts.js"></script>
   <script src="js/state-data.js" defer></script>
-<script src="js/interactions.js" defer></script><script src="js/storytelling.js" defer></script><script src="js/mobile-layout.js" defer></script><script src="js/data-modal.js" defer></script></body>
+  <script src="js/interactions.js" defer></script>
+  <script src="js/storytelling.js" defer></script>
+  <script src="js/mobile-layout.js" defer></script>
+  <script src="js/data-modal.js" defer></script>
+</body>
 </html>
