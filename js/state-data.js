@@ -1,5 +1,7 @@
 
-/* Charts 4 and 7 share one row per state and year; never append their totals. */
+/* Loads and validates state and First Nations rows, joining map labels to state-year counts.
+ * Rendering filters by year, then updates the map or bubbles, scales, axes and selection details.
+ * GenAI acknowledgement: Codex assisted with parts of D3 chart code and CSV integration. The team reviewed, edited and verified the code. */
 (async () => {
     const d3 = window.d3;
     const $ = s => document.querySelector(s);
@@ -779,3 +781,5 @@
         console.error(e);
     }
 })();
+
+

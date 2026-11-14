@@ -1,5 +1,7 @@
 
-/* Real KNIME data integration for Charts 1, 2, 3, 5 and 6. */
+/* Loads the shared processed CSV, converts fields and renders national and people charts from their Data_type rows.
+ * Each render applies year, road-user and sex filters before drawing scales, axes, marks and tables.
+ * GenAI acknowledgement: Codex assisted with parts of D3 chart code and CSV integration. The team reviewed, edited and verified the code. */
 (async () => {
 
     // Initialise D3 and dashboard elements
@@ -1399,3 +1401,5 @@
         console.error(error);
     }
 })();
+
+

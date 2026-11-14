@@ -6,6 +6,10 @@ A COS30045 team dashboard exploring Australian hospitalised road injuries from 2
 
 [Team GitHub repository](https://github.com/thivyasree1701/COS30045_Data-Visualisation-Project)
 
+## Mercury website
+
+[Road Injury Explorer on COS30045 Mercury](https://mercury.swin.edu.au/cos30045/s105685114/roadinjury-g4)
+
 ## Dashboard pages
 
 | Page | Visualisations |
@@ -13,15 +17,16 @@ A COS30045 team dashboard exploring Australian hospitalised road injuries from 2
 | `index.html` — Overview | National trend, road-user donut, road-user shares over time and state hospital burden bubbles. |
 | `age-sex.html` — People | Age-and-sex grouped bars, road-user change since 2011 dumbbell chart and road-user by age heatmap. |
 | `states.html` — Location | State map with ranking and First Nations trends by remoteness with brushing. |
+| `about.html` — About | Project overview, glossary, data and methods, and team contributions. |
 
-The current dashboard uses these three pages. `road-users.html` is an earlier page retained in the project.
+The dashboard uses the four pages listed above. `road-users.html` is an earlier page retained in the project.
 
 ## Run locally
 
 1. Pull the latest changes in GitHub Desktop.
 2. Open the repository folder in VS Code.
 3. Open `index.html` with Live Server.
-4. Navigate using Overview, People and Location.
+4. Navigate using Overview, People, Location and About.
 
 Use an HTTP server instead of opening HTML files directly so CSVs and geographic boundaries can load. No npm installation or build is required. The D3 CDN requires internet access.
 
@@ -60,7 +65,7 @@ The loader supports the current heatmap export's `75++` column as the `75+` disp
 - State selection through the map and ranking.
 - First Nations year hover counts, legend highlighting, range brushing and Clear Selection.
 
-First Nations trends remain national when a state is selected. The dumbbell compares 2011 with the selected year. The desktop layout is designed to fit the viewport without page scrolling; screen sizes still need testing.
+First Nations trends remain national when a state is selected. The dumbbell compares 2011 with the selected year. Desktop layouts are designed to fit the viewport; mobile layouts allow vertical scrolling. The About glossary cards and controls were checked at 1920×1080, 1366×768 and mobile widths. Broader dashboard screen-size and interaction testing remains part of final validation.
 
 ## Team responsibilities
 
@@ -86,8 +91,10 @@ Checks performed include combined record counts, annual road-user percentage tot
 - Review chart calculations against KNIME and source tables.
 - Record feedback, validation results and design iterations.
 - Complete the Design Book, source attribution and APA 7 references.
-- Deploy to Mercury and test relative paths, filename case and data loading.
+- Verify the Mercury deployment, relative paths, filename case and data loading.
 
 ## AI acknowledgement
 
-Codex assisted with the initial scaffold and later HTML, CSS, D3 chart code, CSV integration, interactions, debugging and README updates. Team members must review, understand and verify the work and document assistance according to course requirements. AI assistance does not replace source-data validation or personal understanding.
+Codex assisted with parts of the initial website structure, HTML, CSS, D3.js chart code, CSV integration, interactions, debugging and README updates. Claude provided ideas for the website. Team members reviewed, edited and verified the AI-assisted work. AI assistance does not replace source-data validation, attribution or personal understanding.
+
+

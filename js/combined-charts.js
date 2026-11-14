@@ -1,10 +1,12 @@
 
-// GenAI-assisted dashboard visualisations
+/* GenAI acknowledgement: Codex assisted with parts of the shared D3 chart code, CSV integration and interactions.
+ * Claude provided website ideas. The team reviewed, edited and verified the AI-assisted work. */
 
 (() => {
     const d3 = window.d3;
 
     /* ---------- Load dashboard data ---------- */
+    // Parse the prepared CSV once, keep typed records, and share them with each chart module.
 
     window.dashboardData = d3.text(
         'data/processed/australian_road_injury_dashboard.csv'
@@ -615,3 +617,5 @@
 
     dumbbell();
 })();
+
+

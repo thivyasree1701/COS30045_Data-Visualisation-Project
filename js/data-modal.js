@@ -152,8 +152,8 @@
                 !/year/i.test(label) &&
                 rows.length &&
                 rows.every(r =>
-                    /^[\d,.%−\-**\s**]+$/.test(r.cells[i]?.textContent.trim()) ||
-                    /^(Unavailable|&#x4E;**\/&#x41;|)$/i.test(
+                    /^[\d,.%−\-\s]+$/.test(r.cells[i]?.textContent.trim()) ||
+                    /^(Unavailable|N\/A|)$/i.test(
                         r.cells[i]?.textContent.trim()
                     )
                 )
@@ -169,7 +169,7 @@
         // Check for missing values
         const missing = rows.some(r =>
             [...r.cells].some(c =>
-                /^(Unavailable|&#x4E;**\/&#x41;|)$/i.test(
+                /^(Unavailable|N\/A|)$/i.test(
                     c.textContent.trim()
                 )
             )
@@ -198,3 +198,4 @@
         attributeFilter: ['open']
     });
 })();
+

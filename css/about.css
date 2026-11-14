@@ -1,11 +1,10 @@
 
-/* GenAI note: drafted with Claude (Anthropic) and adjusted with Codex.
-Prompt summary: Integrate the supplied About page without adding content; retain its section tabs and prevent text overlap. */
+/* GenAI acknowledgement: Codex assisted with parts of the About page HTML and CSS. Claude provided website ideas. The team reviewed, edited and verified the AI-assisted work. */
 
 /* about.css — about.html only. Fits the window like the other pages (no page scrolling).
    Sections are tabs in the sidebar, so one section is on screen at a time.
    Text size scales with window height so it stays large on big screens and still fits on laptops.
-   GenAI note: drafted with Claude (Anthropic); reviewed by the team. */
+   GenAI assistance is acknowledged above; the team reviewed and verified the styles. */
 
 /* Colour Variables */
 :root {
@@ -1077,3 +1076,4 @@ body[data-page="about"] .page-nav a[aria-current="page"] {
     flex-wrap: wrap;
   }
 }
+

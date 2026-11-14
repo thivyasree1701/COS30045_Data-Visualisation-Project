@@ -1,5 +1,6 @@
 
-/* Shared detail-on-demand for the design preview; never invents real counts. */
+/* Shared tooltip, keyboard and expanded-chart interactions; it does not calculate or invent data.
+ * GenAI acknowledgement: Codex assisted with parts of the chart interaction code. The team reviewed, edited and verified it. */
 (() => {
 
     // Page entrance animation
@@ -598,3 +599,5 @@
 
     decorate();
 })();
+
+

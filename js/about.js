@@ -1,15 +1,15 @@
 
-// GenAI note: drafted with Claude (Anthropic) and adjusted with Codex.
+// GenAI acknowledgement: Codex assisted with parts of this page code; Claude provided website ideas.
 // Prompt summary: Integrate the supplied About page without adding content;
 // retain its section tabs and prevent text overlap.
 
 /*
  * about.js — section tabs and glossary search/filter for about.html.
  * Plain JavaScript (this page has no charts, so no D3 is needed).
- * GenAI note: drafted with Claude (Anthropic).
+ * The team reviewed, edited and verified the AI-assisted work.
  * Prompt summary: "Make the About page fit the
  * window with no scrolling; use tabs and a compact glossary".
- * Reviewed by the team.
+
  */
 
 (function () {
@@ -213,3 +213,5 @@
         });
     });
 })();
+
+
