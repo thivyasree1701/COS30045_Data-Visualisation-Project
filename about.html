@@ -53,8 +53,10 @@ Prompt summary: Integrate the supplied About page without adding content; retain
         <div class="about-tabs" role="tablist" aria-label="About sections" aria-orientation="vertical">
             <button type="button" role="tab" id="tab-project" aria-controls="panel-project" aria-selected="true">The project</button>
             <button type="button" role="tab" id="tab-glossary" aria-controls="panel-glossary" aria-selected="false" tabindex="-1">Glossary</button>
+
             <button type="button" role="tab" id="tab-sources" aria-controls="panel-sources" aria-selected="false" tabindex="-1">Data &amp; method</button>
             <button type="button" role="tab" id="tab-team" aria-controls="panel-team" aria-selected="false" tabindex="-1">The team</button>
+
         </div>
 
         <div class="sidebar-bottom">
@@ -157,12 +159,13 @@ Prompt summary: Integrate the supplied About page without adding content; retain
                     </div>
                 </section>
 
+                
             </div>
 
             <!-- Panel 2: Glossary -->
-            <div class="about-panel" id="panel-glossary" role="tabpanel" aria-labelledby="tab-glossary" hidden>
+            <div class="about-panel glossary-panel" id="panel-glossary" role="tabpanel" aria-labelledby="tab-glossary" hidden>
 
-                <section class="chart-card" aria-labelledby="glossary-title">
+                <section class="chart-card glossary-card" aria-labelledby="glossary-title">
                     <div class="card-header">
                         <div>
                             <h2 id="glossary-title">Glossary</h2>
@@ -186,7 +189,7 @@ Prompt summary: Integrate the supplied About page without adding content; retain
                     </div>
 
                     <!-- Glossary Terms -->
-                    <dl class="glossary-list" id="glossary-list">
+                    <dl class="glossary-list" id="glossary-list" tabindex="0" aria-label="Glossary definitions. Scroll within this list to browse all results.">
 
                         <!-- Measures -->
                         <div class="glossary-item" data-category="measures"><dt>Hospitalised injury</dt><dd>A road-crash injury that led to a confirmed hospital admission. In-hospital deaths are not counted.</dd><span class="gl-where">All pages</span></div>
@@ -229,9 +232,10 @@ Prompt summary: Integrate the supplied About page without adding content; retain
 
                     <p class="glossary-empty" id="glossary-empty" hidden>No terms match your search. Try a shorter word.</p>
                 </section>
+
             </div>
 
-            <!-- Panel 3: Data and Method -->
+            <!-- Panel 3: Behind the Project -->
             <div class="about-panel grid-2x2" id="panel-sources" role="tabpanel" aria-labelledby="tab-sources" hidden>
 
                 <section class="chart-card" aria-labelledby="sources-title">
@@ -317,10 +321,13 @@ Prompt summary: Integrate the supplied About page without adding content; retain
                             <span class="team-avatar" aria-hidden="true">CE</span>
                             <h3>Cheong En Ying</h3>
                             <ul>
-                                <li>KNIME workflows</li>
-                                <li>National trend chart and state map</li>
-                                <li>Created and shared the Design Book</li>
-                                <li>Helped divide team tasks</li>
+                                <li>Developed the national trend chart and state comparison map.</li>
+                                <li>Processed national and state data using KNIME.</li>
+                                <li>Helped divide tasks and coordinate team activities.</li>
+                                <li>Created and shared the Design Book.</li>
+                                <li>Contributed to the project report and presentation slides.</li>
+                                <li>Assisted with website updates, GitHub and project ideas.</li>
+                                <li>Developed the About page.</li>
                             </ul>
                         </article>
 
@@ -328,10 +335,13 @@ Prompt summary: Integrate the supplied About page without adding content; retain
                             <span class="team-avatar" aria-hidden="true">TS</span>
                             <h3>Thivyasree A/P Sunder</h3>
                             <ul>
-                                <li>Road-user donut, stacked bars and dumbbell</li>
-                                <li>Data cleaning and CSV integration</li>
-                                <li>Website updates and GitHub</li>
-                                <li>Presentation assembly</li>
+                                <li>Cleaned and prepared all three datasets using KNIME.</li>
+                                <li>Combined and managed KNIME workflows for the visualisations.</li>
+                                <li>Developed five charts: road-user donut, dumbbell, stacked bars, state bubble and First Nations remoteness trends.</li>
+                                <li>Shared cleaned datasets with team members.</li>
+                                <li>Managed website updates, GitHub and Mercury deployment.</li>
+                                <li>Contributed to the project report and presentation slides.</li>
+                                <li>Prepared project presentation slides for Stages 1, 2 and 3.</li>
                             </ul>
                         </article>
 
@@ -339,10 +349,13 @@ Prompt summary: Integrate the supplied About page without adding content; retain
                             <span class="team-avatar" aria-hidden="true">JM</span>
                             <h3>Janani A/P Murugan</h3>
                             <ul>
-                                <li>Age-and-sex bars</li>
-                                <li>Road-user by age heatmap</li>
-                                <li>First Nations chart</li>
-                                <li>Design Book and presentation</li>
+                                <li>Developed the age-and-sex hospitalisation chart.</li>
+                                <li>Created the road-user by age-group heatmap.</li>
+                                <li>Developed the remoteness area donut chart.</li>
+                                <li>Contributed to the First Nations visualisations.</li>
+                                <li>Helped organise the VS Code project and update GitHub.</li>
+                                <li>Contributed to the project report and documentation.</li>
+                                <li>Shared ideas and supported website improvements.</li>
                             </ul>
                         </article>
                     </div>
@@ -395,3 +408,4 @@ Prompt summary: Integrate the supplied About page without adding content; retain
 
 </body>
 </html>
+

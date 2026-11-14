@@ -193,19 +193,18 @@
         function base(id, height = 240) {
             const host = $('#' + id);
 
-            host.replaceChildren();
-
-            const card = host.closest('section');
-
+            // Measure the plot before clearing its previous SVG so redraws
+            // always use the stable, laid-out chart area.
+            const bounds = host.getBoundingClientRect();
             const w = Math.max(
                 id === 'people-heatmap' && matchMedia('(max-width:767px)').matches
                     ? 720
                     : 320,
-                host.clientWidth
+                bounds.width || host.clientWidth
             );
+            const h = Math.max(100, bounds.height || host.clientHeight);
 
-            const h = Math.max(100, host.clientHeight);
-
+            host.replaceChildren();
             const svg = d3.select(host)
                 .append('svg')
                 .attr('viewBox', `0 0 ${w} ${h}`)
@@ -853,13 +852,17 @@
                     ])
                 );
 
-                // Add road-user colour key
-                for (const id of ['stack']) {
-                    const button = document.createElement('button');
+                // Reuse one colour key button across every chart redraw.
+                const stack = $('#stack');
+                let button = stack.parentElement.querySelector('.real-legend');
 
+                if (!button) {
+                    button = document.createElement('button');
                     button.className = 'real-legend';
                     button.type = 'button';
                     button.textContent = 'Road-user colour key (12)';
+                    stack.after(button);
+                }
 
                     button.onclick = () => {
                         dialog.querySelectorAll('.dialog-table').forEach(e => {
@@ -898,10 +901,7 @@
                         });
 
                         dialog.showModal();
-                    };
-
-                    $('#' + id).after(button);
-                }
+                };
 
                 // Update national summary metrics
                 const metrics = document.querySelectorAll('.metrics article');
@@ -1362,10 +1362,6 @@
         const originalRender = render;
 
         render = () => {
-            document.querySelectorAll('.real-legend').forEach(e => {
-                e.remove();
-            });
-
             originalRender();
 
             document.dispatchEvent(

@@ -83,12 +83,16 @@
         });
     });
 
-    const fromHash = document.getElementById(
-        'tab-' + location.hash.replace('#', '')
+    const hashName = location.hash.replace('#', '');
+    const fromHash = document.getElementById('tab-' + hashName);
+    const initialTab = fromHash || (
+        hashName === 'glossary'
+            ? document.getElementById('tab-project')
+            : null
     );
 
-    if (fromHash) {
-        showTab(fromHash, false);
+    if (initialTab) {
+        showTab(initialTab, false);
     }
 
     /* ---------- Glossary ---------- */
