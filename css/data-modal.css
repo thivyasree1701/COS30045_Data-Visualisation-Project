@@ -1,3 +1,9 @@
+/* AI PROMPT SUMMARY (paraphrased from project development requests; not verbatim prompts)
+Scope: records the AI-assisted requests relevant to this file, not a claim that every line was AI-generated.
+Assistance: Codex implementation and refinement support during project development.
+1. Style readable data-table dialogs with visible headings, right-aligned numeric values and a scrollable table area.
+2. Simplify the first colourful design to white backgrounds, thin grey row separators and concise explanations, without alternating blue rows or download controls.
+These summaries document assistance; they do not establish data correctness, accessibility compliance or completion of testing. */
 
 /* Data-First Modal: Fixed Heading and Footer with Scrollable Table */
 

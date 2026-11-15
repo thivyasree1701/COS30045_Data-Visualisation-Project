@@ -1,3 +1,9 @@
+/* AI PROMPT SUMMARY (paraphrased from project development requests; not verbatim prompts)
+Scope: records the AI-assisted requests relevant to this file, not a claim that every line was AI-generated.
+Assistance: Codex implementation and refinement support during project development.
+1. Add chart-specific storytelling captions grounded in the processed data and update them with supported filters.
+2. Explain trends, category shares, changes and hospital burden; use restrained transitions rather than decorative animation.
+These summaries document assistance; they do not establish data correctness, accessibility compliance or completion of testing. */
 
 /* Derived insights use the same KNIME rows and filter values as the charts. */
 (() => {

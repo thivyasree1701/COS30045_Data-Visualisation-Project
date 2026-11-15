@@ -1,3 +1,9 @@
+/* AI PROMPT SUMMARY (paraphrased from project development requests; not verbatim prompts)
+Scope: records the AI-assisted requests relevant to this file, not a claim that every line was AI-generated.
+Assistance: Codex implementation and refinement support during project development.
+1. Connect national and People charts to processed data, with year selection, road-user highlighting and the supported sex breakdown.
+2. Render line, donut, stacked-bar, grouped-bar and heatmap views with exact-value tables; improve labels and sizing in small and expanded views.
+These summaries document assistance; they do not establish data correctness, accessibility compliance or completion of testing. */
 
 /* Loads the shared processed CSV, converts fields and renders national and people charts from their Data_type rows.
  * Each render applies year, road-user and sex filters before drawing scales, axes, marks and tables.

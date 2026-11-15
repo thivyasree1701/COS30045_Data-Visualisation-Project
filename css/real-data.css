@@ -1,3 +1,9 @@
+/* AI PROMPT SUMMARY (paraphrased from project development requests; not verbatim prompts)
+Scope: records the AI-assisted requests relevant to this file, not a claim that every line was AI-generated.
+Assistance: Codex implementation and refinement support during project development.
+1. Fit the populated dashboard into the desktop viewport and refine chart spacing, light category colours and readable labels.
+2. Style enlarged charts and explanation panels, make remoteness controls distinguishable and keep navigation sizing consistent across four pages.
+These summaries document assistance; they do not establish data correctness, accessibility compliance or completion of testing. */
 
 /* Fit the dashboard into the viewport; details open separately. */
 

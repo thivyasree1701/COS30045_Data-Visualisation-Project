@@ -1,3 +1,9 @@
+/* AI PROMPT SUMMARY (paraphrased from project development requests; not verbatim prompts)
+Scope: records the AI-assisted requests relevant to this file, not a claim that every line was AI-generated.
+Assistance: Codex implementation and refinement support during project development.
+1. Allow scrolling on phones while keeping the desktop dashboard fixed within the window.
+2. Move the existing sidebar controls into a hamburger drawer without losing their event handlers; support closing, focus return and restoring the desktop sidebar.
+These summaries document assistance; they do not establish data correctness, accessibility compliance or completion of testing. */
 
 /* Keep the existing filter controls and their listeners when opening the mobile drawer. */
 (() => {

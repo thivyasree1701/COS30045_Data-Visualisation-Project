@@ -1,3 +1,9 @@
+/* AI PROMPT SUMMARY (paraphrased from project development requests; not verbatim prompts)
+Scope: records the AI-assisted requests relevant to this file, not a claim that every line was AI-generated.
+Assistance: supplied Claude-assisted About reference; Codex integration and subsequent layout/interaction refinements.
+1. Integrate the supplied About styling while retaining its sidebar section tabs, card layouts and original content.
+2. Adjust spacing to prevent overlap, match the shared navigation font and alignment, and style the mobile section drawer without changing the desktop sidebar.
+These summaries document assistance; they do not establish data correctness, accessibility compliance or completion of testing. */
 
 /* GenAI acknowledgement: Codex assisted with parts of the About page HTML and CSS. Claude provided website ideas. The team reviewed, edited and verified the AI-assisted work. */
 

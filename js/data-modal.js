@@ -1,3 +1,9 @@
+/* AI PROMPT SUMMARY (paraphrased from project development requests; not verbatim prompts)
+Scope: records the AI-assisted requests relevant to this file, not a claim that every line was AI-generated.
+Assistance: Codex implementation and refinement support during project development.
+1. Redesign View data dialogs with the table first, clear titles and scope, concise data explanations and source notes; do not add CSV download.
+2. Keep chart previews separate from table presentation, format numeric columns and support a scrollable table region.
+These summaries document assistance; they do not establish data correctness, accessibility compliance or completion of testing. */
 
 /* Shared presentation for data tables; existing chart dialog renderers remain intact. */
 (() => {

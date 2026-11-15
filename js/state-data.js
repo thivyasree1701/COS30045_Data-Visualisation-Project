@@ -1,3 +1,9 @@
+/* AI PROMPT SUMMARY (paraphrased from project development requests; not verbatim prompts)
+Scope: records the AI-assisted requests relevant to this file, not a claim that every line was AI-generated.
+Assistance: Codex implementation and refinement support during project development.
+1. Join geographic boundaries with annual state counts and render the map, state ranking and hospital-burden bubble chart.
+2. Support year and state selection with details, keeping national First Nations trends independent of state selection.
+These summaries document assistance; they do not establish data correctness, accessibility compliance or completion of testing. */
 
 /* Loads and validates state and First Nations rows, joining map labels to state-year counts.
  * Rendering filters by year, then updates the map or bubbles, scales, axes and selection details.

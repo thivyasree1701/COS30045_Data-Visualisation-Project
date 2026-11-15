@@ -1,3 +1,9 @@
+/* AI PROMPT SUMMARY (paraphrased from project development requests; not verbatim prompts)
+Scope: records the AI-assisted requests relevant to this file, not a claim that every line was AI-generated.
+Assistance: Codex implementation and refinement support during project development.
+1. Make View chart open an automatically enlarged chart without a separate maximise/restore button.
+2. Remove duplicate native hover tooltips; retain custom details and keyboard access, add explanatory side panels and restore working remoteness brushing in expanded views.
+These summaries document assistance; they do not establish data correctness, accessibility compliance or completion of testing. */
 
 /* Shared tooltip, keyboard and expanded-chart interactions; it does not calculate or invent data.
  * GenAI acknowledgement: Codex assisted with parts of the chart interaction code. The team reviewed, edited and verified it. */

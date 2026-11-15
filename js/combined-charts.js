@@ -1,3 +1,9 @@
+/* AI PROMPT SUMMARY (paraphrased from project development requests; not verbatim prompts)
+Scope: records the AI-assisted requests relevant to this file, not a claim that every line was AI-generated.
+Assistance: Codex implementation and refinement support during project development.
+1. Load the combined KNIME CSV and use the appropriate data-type rows for the chart components.
+2. Implement the people comparisons and remoteness timeline; preserve usable interactions when rendering charts at expanded modal dimensions.
+These summaries document assistance; they do not establish data correctness, accessibility compliance or completion of testing. */
 
 /* GenAI acknowledgement: Codex assisted with parts of the shared D3 chart code, CSV integration and interactions.
  * Claude provided website ideas. The team reviewed, edited and verified the AI-assisted work. */

@@ -1,3 +1,9 @@
+/* AI PROMPT SUMMARY (paraphrased from project development requests; not verbatim prompts)
+Scope: records the AI-assisted requests relevant to this file, not a claim that every line was AI-generated.
+Assistance: supplied Claude-assisted About reference; Codex integration and subsequent layout/interaction refinements.
+1. Preserve the supplied About section tabs and searchable glossary with four topic controls; keep content accessible without overlaps.
+2. Reuse the mobile drawer for About sections, use suitable labels and close it after selecting a section.
+These summaries document assistance; they do not establish data correctness, accessibility compliance or completion of testing. */
 
 // GenAI acknowledgement: Codex assisted with parts of this page code; Claude provided website ideas.
 // Prompt summary: Integrate the supplied About page without adding content;
