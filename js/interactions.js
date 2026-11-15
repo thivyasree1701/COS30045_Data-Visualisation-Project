@@ -74,6 +74,8 @@
         const note = document.createElement('span');
         note.textContent =
             `Year: ${(mark.dataset.detail.match(/\b20\d{2}\b/)?.[0] || document.querySelector('#year').value)} · ${
+                mark.closest('#road-bed-chart') &&
+                document.querySelector('script[src="js/combined-charts.js"]') ||
                 mark.closest('#state-map,#bubble,#remoteness-donut') &&
                 document.querySelector('script[src="js/state-data.js"]') ||
                 mark.closest('#trend,#donut,#stack,#age-chart,#people-heatmap') &&
@@ -249,6 +251,8 @@
         } else if (kind === 'road-bed-chart') {
             const host = canvas.firstElementChild;
 
+            let selectedMark = null;
+
             const render = async () => {
                 await window.drawExpandedDumbbell?.(host);
 
@@ -256,14 +260,49 @@
                     const detail = mark.getAttribute('aria-label');
 
                     mark.querySelectorAll('title').forEach(t => t.remove());
+                    mark.setAttribute('tabindex', '0');
+                    mark.style.cursor = 'pointer';
 
-                    mark.onpointerenter = mark.onfocus = () => {
+                    const activate = () => {
+                        host.querySelectorAll('.dumbbell-active').forEach(item => {
+                            if (item !== mark && item !== selectedMark) {
+                                item.classList.remove('dumbbell-active');
+                            }
+                        });
+
+                        mark.classList.add('dumbbell-active');
                         info.textContent = detail;
                     };
 
-                    mark.onclick = () => {
-                        info.textContent = detail;
-                    };
+                    mark.addEventListener('pointerenter', activate);
+                    mark.addEventListener('focus', activate);
+                    mark.addEventListener('pointerleave', () => {
+                        if (selectedMark !== mark) {
+                            mark.classList.remove('dumbbell-active');
+                            info.textContent = 'Hover or click a chart mark to see its details.';
+                        }
+                    });
+                    mark.addEventListener('blur', () => {
+                        if (selectedMark !== mark) {
+                            mark.classList.remove('dumbbell-active');
+                        }
+                    });
+                    mark.addEventListener('click', () => {
+                        selectedMark = selectedMark === mark ? null : mark;
+
+                        if (selectedMark) {
+                            activate();
+                        } else {
+                            mark.classList.remove('dumbbell-active');
+                            info.textContent = 'Hover or click a chart mark to see its details.';
+                        }
+                    });
+                    mark.addEventListener('keydown', event => {
+                        if (event.key === 'Enter' || event.key === ' ') {
+                            event.preventDefault();
+                            mark.click();
+                        }
+                    });
                 });
             };
 
@@ -408,8 +447,8 @@
             close,
             title,
             subtitle,
-            canvas,
             info,
+            canvas,
             note
         );
 

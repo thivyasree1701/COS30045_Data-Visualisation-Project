@@ -1678,3 +1678,69 @@ body[data-page] main:has(.page-nav a[href="about.html"]) {
         min-width: 0;
     }
 }
+
+/* Highlight dumbbell comparisons with their existing blue and orange palette. */
+#road-bed-chart g[tabindex]:focus,
+.expanded-chart-canvas g[tabindex]:focus {
+    outline: none !important;
+}
+
+#road-bed-chart g.detail-active line,
+#road-bed-chart g.dumbbell-active line,
+.expanded-chart-canvas g.dumbbell-active line {
+    stroke: #8bb7de !important;
+    stroke-width: 5px !important;
+}
+
+#road-bed-chart g.detail-active circle:first-of-type,
+#road-bed-chart g.dumbbell-active circle:first-of-type,
+.expanded-chart-canvas g.dumbbell-active circle:first-of-type {
+    fill: #397db4 !important;
+    stroke: #397db4 !important;
+    stroke-width: 2px !important;
+    r: 5.5px;
+}
+
+#road-bed-chart g.detail-active circle:last-of-type,
+#road-bed-chart g.dumbbell-active circle:last-of-type,
+.expanded-chart-canvas g.dumbbell-active circle:last-of-type {
+    fill: #d6812e !important;
+    stroke: #d6812e !important;
+    stroke-width: 2px !important;
+    r: 5.5px;
+}
+
+/* Compact key for the dumbbell chart's baseline and comparison colors. */
+.dumbbell-legend {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+}
+
+.dumbbell-legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.dumbbell-swatch {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    display: inline-block;
+    flex: 0 0 9px;
+}
+
+.dumbbell-swatch-2011 {
+    background: #518fc8;
+}
+
+.dumbbell-swatch-selected {
+    background: #eea34f;
+}
+
+.dumbbell-legend-scope {
+    white-space: nowrap;
+}
